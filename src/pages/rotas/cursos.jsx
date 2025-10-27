@@ -5,8 +5,8 @@ const Cursos = () => {
     console.log(cursosData);
     
   return (
-    <div className="flex flex-wrap justify-center bg-[#e3d7bf] p-3 rounded-lg shadow-md">
-      <div className="flex flex-wrap justify-between gap-2  bg-[#e3d7bf]">
+    <div className="flex flex-wrap justify-center bg-[#e3d7bf] item-center rounded-lg shadow-md py-3">
+      <div className="flex flex-wrap justify-center md:justify-between gap-3 bg-[#e3d7bf]">
         {cursosData.map((curso, index) => (
           <Card
             key={index}

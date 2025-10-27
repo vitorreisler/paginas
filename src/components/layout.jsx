@@ -7,8 +7,7 @@ export default function Layout({ children }) {
       <Navbar />
       <div className="flex flex-1 justify-center" >
         <main className="flex-1  max-w-[1200px] flex-wrap  bg-red-100 mx-auto">
-         
-          <section className="p-15">
+          <section className="py-8 px-5">
           {children}
           </section>
         </main>

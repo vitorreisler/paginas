@@ -1,31 +1,109 @@
 const CursoPedrasResina = () => {
   return (
-    <div className="flex flex-col bg-red-200 border border-black">
-      <h1>Curso Pedras e Resina</h1>
-      <div className="flex bg-white justify-between">
-        <div className="border border-blak w-1/2 text-center">
-          <div className="flex flex-col">
-            <h2>bla bla bla</h2>
+    <div className="flex flex-col text-center p-2 bg-[#e3d7bf] border border-black overflow-x-hidden">
+      <div className="flex flex-wrap-reverse w-full bg-[#e3d7bf] justify-center lg:justify-between">
+        <div className="border border-black my-auto w-full lg:w-1/2 text-center bg-blue-200 px-3">
+          <div className="flex flex-col py-2">
+            <h2 className="py-3 text-3xl md:text-5xl story-script-regular">
+              Curso de Artesanato com Pedras e Resina: Domine a Arte de Criar
+              Peças Únicas e Lucrativas
+            </h2>
             <hr />
-            <h3>bla bla bla</h3>
+            <h3 className="py-3 text-xl md:text-xl dm-serif-text-regular">
+              Transforme suas ideias em peças que encantam e busque sucesso no
+              mundo do artesanato com pedras e resina.
+            </h3>
             <a
-              href="http://"
+              href="https://pay.hotmart.com/U102469342X?off=frwzmpjz&hotfeature=51&_hi=eyJjaWQiOiIxNzU5MjM2ODA5MTE5ODI1ODExMjE2MjU0MDU2NjAwIiwiYmlkIjoiMTc1OTIzNjgwOTExOTgyNTgxMTIxNjI1NDA1NjYwMCIsInNpZCI6IjRjZTNkOTllNGI1MjQ2OWJhN2UzYjk1Yzk2YWJiNWM0In0=.1761582950625"
               target="_blank"
               rel="noopener noreferrer"
-              className="border border-black "
+              className="mx-auto py-2 border border-black rounded-lg shadow-md text-amber-50 bg-[#9a5833] duration-500 hover:scale-105 hover:bg-[#e3d7bf] hover:text-gray-800 w-3/4 md:w-1/2"
             >
-              {" "}
-              aaa
+              Comprar Agora
             </a>
           </div>
         </div>
-        <div className="border border-blak w-1/2 text-center bg-[#e5e3d8]">
+
+        <div className="flex justify-center w-full lg:w-1/2 text-center my-2">
           <img
-            className="drop-shadow-lg"
+            className="drop-shadow-lg max-w-full h-auto lg:w-[75%]"
             src="/images/cursoPedras2.png"
-            alt=""
+            alt="Curso de Artesanato com Pedras e Resina"
+            loading="lazy"
           />
         </div>
+      </div>
+
+      <div className="flex flex-col my-3">
+        <div>
+          <h2 className="text-4xl p-3 md:text-6xl story-script-regular bg-[#e5e3d8]">
+            Sobre o conteúdo
+          </h2>
+          <p className="p-3 text-lg bg-[#e3d7bf] text-start dm-serif-text-regular">
+            Você ama o mundo do artesanato e sonha em transformar suas ideias em
+            peças que encantam?
+            <br />
+            <br />
+            No Curso de Artesanato com Pedras e Resina, você vai aprender tudo o
+            que precisa para criar peças únicas, sofisticadas e cheias de
+            personalidade, mesmo que seja iniciante.
+            <br />
+            <br />
+            Com aulas práticas e linguagem simples, você vai dominar o uso da
+            resina epóxi e das pedras naturais para produzir velas pilar,
+            decorações exclusivas e até a famosa vela gruta, uma tendência que
+            encanta os amantes do artesanal.
+          </p>
+        </div>
+        <div>
+          <h2 className="text-4xl p-3 md:text-6xl story-script-regular bg-[#e5e3d8] ">
+            Você vai aprender
+          </h2>
+          <ul className="p-3 text-lg bg-[#e3d7bf] text-start dm-serif-text-regular list-disc">
+            <li className="py-1">
+              Como preparar e trabalhar com resina e pedras naturais passo a
+              passo;
+            </li>
+            <li className="py-1">
+              Técnicas para criar velas artesanais pilar com acabamento
+              perfeito;
+            </li>
+            <li className="py-1">
+              Ideias criativas de decoração com resina que valorizam qualquer
+              ambiente;
+            </li>
+            <li className="py-1">
+              Como fazer a charmosa vela gruta, com detalhes encantadores;
+            </li>
+            <li className="py-1">
+              Dicas de moldagem, polimento e combinação de cores para um
+              resultado profissional.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 className="text-4xl p-3 md:text-6xl story-script-regular bg-[#e5e3d8] ">
+            Bônus Exclusivo
+          </h2>
+          <ul className="p-3 text-lg bg-[#e3d7bf] text-start dm-serif-text-regular list-disc">
+            <li className="py-1">
+              Aprenda a produzir um difusor de varetas artesanal, elegante e
+              perfumado;
+            </li>
+            <li className="py-1">
+              Crie uma saboneteira de pedra e resina, perfeita para presentear
+              ou vender.
+            </li>
+            <li className="py-1">Aprenda a trabalhar com Folhas de Ouro</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className=" w-full flex flex-col mt-8 mx-auto bg-[#e5e3d8]">
+        <img className="max-w-[200px] mx-auto mb-3" src="/images/devices.webp" alt="" />
+        <p className="dm-serif-text-regular text-lg">
+            Aproveite o conteúdo em qualquer dispositivo.
+        </p>
       </div>
     </div>
   );
