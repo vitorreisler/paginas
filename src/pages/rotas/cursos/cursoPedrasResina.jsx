@@ -1,8 +1,8 @@
 const CursoPedrasResina = () => {
   return (
-    <div className="flex flex-col text-center p-2 bg-[#e3d7bf] border border-black overflow-x-hidden">
+    <div className="flex flex-col text-center p-2 bg-[#e3d7bf] rounded-lg">
       <div className="flex flex-wrap-reverse w-full bg-[#e3d7bf] justify-center lg:justify-between">
-        <div className="border border-black my-auto w-full lg:w-1/2 text-center bg-blue-200 px-3">
+        <div className=" my-auto w-full lg:w-1/2 text-center px-3">
           <div className="flex flex-col py-2">
             <h2 className="py-3 text-3xl md:text-5xl story-script-regular">
               Curso de Artesanato com Pedras e Resina: Domine a Arte de Criar
@@ -17,7 +17,7 @@ const CursoPedrasResina = () => {
               href="https://pay.hotmart.com/U102469342X?off=frwzmpjz&hotfeature=51&_hi=eyJjaWQiOiIxNzU5MjM2ODA5MTE5ODI1ODExMjE2MjU0MDU2NjAwIiwiYmlkIjoiMTc1OTIzNjgwOTExOTgyNTgxMTIxNjI1NDA1NjYwMCIsInNpZCI6IjRjZTNkOTllNGI1MjQ2OWJhN2UzYjk1Yzk2YWJiNWM0In0=.1761582950625"
               target="_blank"
               rel="noopener noreferrer"
-              className="mx-auto py-2 border border-black rounded-lg shadow-md text-amber-50 bg-[#9a5833] duration-500 hover:scale-105 hover:bg-[#e3d7bf] hover:text-gray-800 w-3/4 md:w-1/2"
+              className="mx-auto py-2 rounded-lg shadow-md text-amber-50 bg-[#9a5833] duration-500 hover:scale-105 hover:bg-[#e3d7bf] hover:text-gray-800 w-3/4 md:w-1/2"
             >
               Comprar Agora
             </a>
@@ -59,7 +59,7 @@ const CursoPedrasResina = () => {
           <h2 className="text-4xl p-3 md:text-6xl story-script-regular bg-[#e5e3d8] ">
             Você vai aprender
           </h2>
-          <ul className="p-3 text-lg bg-[#e3d7bf] text-start dm-serif-text-regular list-disc">
+          <ul className="py-3 px-8 text-lg bg-[#e3d7bf] text-start dm-serif-text-regular list-disc">
             <li className="py-1">
               Como preparar e trabalhar com resina e pedras naturais passo a
               passo;
@@ -85,7 +85,7 @@ const CursoPedrasResina = () => {
           <h2 className="text-4xl p-3 md:text-6xl story-script-regular bg-[#e5e3d8] ">
             Bônus Exclusivo
           </h2>
-          <ul className="p-3 text-lg bg-[#e3d7bf] text-start dm-serif-text-regular list-disc">
+          <ul className="py-3 px-8 text-lg bg-[#e3d7bf] text-start dm-serif-text-regular list-disc">
             <li className="py-1">
               Aprenda a produzir um difusor de varetas artesanal, elegante e
               perfumado;
@@ -99,7 +99,7 @@ const CursoPedrasResina = () => {
         </div>
       </div>
 
-{/* Aproveite em qualquer dispositivo */}
+      {/* Aproveite em qualquer dispositivo */}
 
       <div className=" w-full flex flex-col py-3 mt-8 mx-auto bg-[#e5e3d8]">
         <img
@@ -112,7 +112,7 @@ const CursoPedrasResina = () => {
         </p>
       </div>
 
-{/* Seção de Preço e Compra */}
+      {/* Seção de Preço e Compra */}
 
       <div className=" w-full flex flex-col justify-center px-1 py-3 mt-8 mx-auto bg-[#e5e3d8]">
         <div className="flex flex-row justify-center items-center gap-3 mb-3">
@@ -137,7 +137,9 @@ const CursoPedrasResina = () => {
               alt=""
               loading="lazy"
             />
-            <p className="dm-serif-text-regular text-sm md:text-lg">pagamento 100% seguro com acesso imediato</p>
+            <p className="dm-serif-text-regular text-sm md:text-lg">
+              pagamento 100% seguro com acesso imediato
+            </p>
           </div>
           <div className="">
             {" "}
@@ -151,18 +153,45 @@ const CursoPedrasResina = () => {
           </div>
         </div>
         <a
-              href="https://pay.hotmart.com/U102469342X?off=frwzmpjz&hotfeature=51&_hi=eyJjaWQiOiIxNzU5MjM2ODA5MTE5ODI1ODExMjE2MjU0MDU2NjAwIiwiYmlkIjoiMTc1OTIzNjgwOTExOTgyNTgxMTIxNjI1NDA1NjYwMCIsInNpZCI6IjRjZTNkOTllNGI1MjQ2OWJhN2UzYjk1Yzk2YWJiNWM0In0=.1761582950625"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mx-auto py-2 border border-black rounded-lg shadow-md text-amber-50 bg-[#9a5833] duration-500 hover:scale-105 hover:bg-[#e3d7bf] hover:text-gray-800 w-3/4 md:w-1/2"
-            >
-              Comprar Agora
-            </a>
+          href="https://pay.hotmart.com/U102469342X?off=frwzmpjz&hotfeature=51&_hi=eyJjaWQiOiIxNzU5MjM2ODA5MTE5ODI1ODExMjE2MjU0MDU2NjAwIiwiYmlkIjoiMTc1OTIzNjgwOTExOTgyNTgxMTIxNjI1NDA1NjYwMCIsInNpZCI6IjRjZTNkOTllNGI1MjQ2OWJhN2UzYjk1Yzk2YWJiNWM0In0=.1761582950625"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mx-auto py-2 border border-black rounded-lg shadow-md text-amber-50 bg-[#9a5833] duration-500 hover:scale-105 hover:bg-[#e3d7bf] hover:text-gray-800 w-3/4 md:w-1/2"
+        >
+          Comprar Agora
+        </a>
+      </div>
+
+      <div className="flex flex-wrap-reverse py-3 w-full bg-[#e3d7bf] justify-center lg:justify-between">
+        <div className=" my-auto w-full lg:w-1/2 text-center px-3">
+          <div className="flex flex-col py-2">
+            <h2 className="py-3 text-3xl md:text-4xl story-script-regular">
+              GARANTIA INCONTESTÁVEL DE 7 DIAS
+            </h2>
+            <hr />
+            <p className="py-3 text-md  dm-serif-text-regular te">
+              Milhares de pessoas comuns como você estão mudando suas realidades
+              com o poder do digital.
+              Isso significa que você também pode mudar
+              a sua vida para melhor. Mas caso não goste do que encontrar,
+              devolvo seu dinheiro de volta sem perguntas até 7 dias após a
+              compra.
+            </p>
+         
+          </div>
+        </div>
+
+        <div className="flex justify-center w-full lg:w-1/2 text-center my-2">
+          <img
+            className="drop-shadow-lg max-w-full h-auto lg:w-[65%]"
+            src="/images/garantiaVendas.png"
+            alt="Curso de Artesanato com Pedras e Resina"
+            loading="lazy"
+          />
+        </div>
       </div>
 
       {/* Seção Perguntas Frequentes */}
-      
-
     </div>
   );
 };
