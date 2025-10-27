@@ -99,12 +99,70 @@ const CursoPedrasResina = () => {
         </div>
       </div>
 
-      <div className=" w-full flex flex-col mt-8 mx-auto bg-[#e5e3d8]">
-        <img className="max-w-[200px] mx-auto mb-3" src="/images/devices.webp" alt="" />
+{/* Aproveite em qualquer dispositivo */}
+
+      <div className=" w-full flex flex-col py-3 mt-8 mx-auto bg-[#e5e3d8]">
+        <img
+          className="max-w-[200px] mx-auto mb-3"
+          src="/images/devices.webp"
+          alt="Aproveite o conteúdo em qualquer dispositivo."
+        />
         <p className="dm-serif-text-regular text-lg">
-            Aproveite o conteúdo em qualquer dispositivo.
+          Aproveite o conteúdo em qualquer dispositivo.
         </p>
       </div>
+
+{/* Seção de Preço e Compra */}
+
+      <div className=" w-full flex flex-col justify-center px-1 py-3 mt-8 mx-auto bg-[#e5e3d8]">
+        <div className="flex flex-row justify-center items-center gap-3 mb-3">
+          <div className="">
+            {/* Imagem da vela*/}
+            <img
+              className="drop-shadow-xl hidden lg:inline"
+              src="/images/velaPilarMetade.png"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div>
+            {" "}
+            {/* Imagem da placa*/}
+            <p className="p-2 dm-serif-text-regular text-3xl md:text-5xl">
+              Por apenas{" "}
+            </p>
+            <img
+              className="mx-auto md:max-w-[400px] drop-shadow-xl"
+              src="/images/placaPreco.png"
+              alt=""
+              loading="lazy"
+            />
+            <p className="dm-serif-text-regular text-sm md:text-lg">pagamento 100% seguro com acesso imediato</p>
+          </div>
+          <div className="">
+            {" "}
+            {/* Imagem da vela*/}
+            <img
+              className="drop-shadow-xl hidden lg:inline"
+              src="/images/velaSantaMetade.png"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <a
+              href="https://pay.hotmart.com/U102469342X?off=frwzmpjz&hotfeature=51&_hi=eyJjaWQiOiIxNzU5MjM2ODA5MTE5ODI1ODExMjE2MjU0MDU2NjAwIiwiYmlkIjoiMTc1OTIzNjgwOTExOTgyNTgxMTIxNjI1NDA1NjYwMCIsInNpZCI6IjRjZTNkOTllNGI1MjQ2OWJhN2UzYjk1Yzk2YWJiNWM0In0=.1761582950625"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mx-auto py-2 border border-black rounded-lg shadow-md text-amber-50 bg-[#9a5833] duration-500 hover:scale-105 hover:bg-[#e3d7bf] hover:text-gray-800 w-3/4 md:w-1/2"
+            >
+              Comprar Agora
+            </a>
+      </div>
+
+      {/* Seção Perguntas Frequentes */}
+      
+
     </div>
   );
 };

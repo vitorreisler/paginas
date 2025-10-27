@@ -5,15 +5,6 @@ body {
     background-color: #e7e4d2;
     color: #333;
 }
-div.div-layout {
-    background-color: #e3d7bf;
-}
-main {
-    background-color: #e5e3d8;
-}
-nav, footer {
-    background-color: #9a5833;
-}
 
 .story-script-regular {
   font-family: "Story Script", sans-serif;
@@ -25,3 +16,18 @@ nav, footer {
   font-weight: 400;
   font-style: normal;
 }
+
+div.div-layout {
+    background-color: #e3d7bf;
+}
+
+main {
+    background-color: #e5e3d8;
+}
+
+nav, footer {
+    background-color: #9a5833;
+}
+
+
+
