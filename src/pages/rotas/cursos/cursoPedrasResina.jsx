@@ -1,6 +1,6 @@
 const CursoPedrasResina = () => {
   return (
-    <div className="flex flex-col text-center p-2 bg-[#e3d7bf] rounded-lg">
+    <div className="flex flex-col text-center p-2 bg-[#e3d7bf] rounded-xl drop-shadow-lg">
       <div className="flex flex-wrap-reverse w-full bg-[#e3d7bf] justify-center lg:justify-between">
         <div className=" my-auto w-full lg:w-1/2 text-center px-3">
           <div className="flex flex-col py-2">
@@ -103,7 +103,7 @@ const CursoPedrasResina = () => {
 
       <div className=" w-full flex flex-col py-3 mt-8 mx-auto bg-[#e5e3d8]">
         <img
-          className="max-w-[200px] mx-auto mb-3"
+          className="max-w-[200px] mx-auto mb-3 drop-shadow-lg"
           src="/images/devices.webp"
           alt="Aproveite o conteúdo em qualquer dispositivo."
         />
