@@ -1,7 +1,8 @@
+
 const Media = () => {
-    return (
-        <h1>Aqui tera alguns videos do youtube</h1>
-      );
-}
- 
+  return (
+    "Aqui tera midia"
+  );
+};
+
 export default Media;
