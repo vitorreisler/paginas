@@ -1,38 +1,24 @@
+import AproveiteEmDisp from "@/components/aproveiteEmDisp";
+import ComponenteTextoFoto from "@/components/componenteTextoFoto";
+import GarantiaIncont from "@/components/garantiaIncont";
+import ReviewSection from "@/components/reviewSection";
+import { reviewData } from "@/data/reviewData";
+
 const CursoPedrasResina = () => {
   return (
     <div className="flex flex-col text-center p-2 bg-[#e3d7bf] rounded-xl drop-shadow-lg">
-      <div className="flex flex-wrap-reverse w-full bg-[#e3d7bf] justify-center lg:justify-between">
-        <div className=" my-auto w-full lg:w-1/2 text-center px-3">
-          <div className="flex flex-col py-2">
-            <h2 className="py-3 text-3xl md:text-5xl story-script-regular">
-              Curso de Artesanato com Pedras e Resina: Domine a Arte de Criar
-              Peças Únicas e Lucrativas
-            </h2>
-            <hr />
-            <h3 className="py-3 text-xl md:text-xl dm-serif-text-regular">
-              Transforme suas ideias em peças que encantam e busque sucesso no
-              mundo do artesanato com pedras e resina.
-            </h3>
-            <a
-              href="https://pay.hotmart.com/U102469342X?off=frwzmpjz&hotfeature=51&_hi=eyJjaWQiOiIxNzU5MjM2ODA5MTE5ODI1ODExMjE2MjU0MDU2NjAwIiwiYmlkIjoiMTc1OTIzNjgwOTExOTgyNTgxMTIxNjI1NDA1NjYwMCIsInNpZCI6IjRjZTNkOTllNGI1MjQ2OWJhN2UzYjk1Yzk2YWJiNWM0In0=.1761582950625"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mx-auto py-2 rounded-lg shadow-md text-amber-50 bg-[#9a5833] duration-500 hover:scale-105 hover:bg-[#e3d7bf] hover:text-gray-800 w-3/4 md:w-1/2"
-            >
-              Comprar Agora
-            </a>
-          </div>
-        </div>
-
-        <div className="flex justify-center w-full lg:w-1/2 text-center my-2">
-          <img
-            className="drop-shadow-lg max-w-full h-auto lg:w-[75%]"
-            src="/images/cursoPedras2.png"
-            alt="Curso de Artesanato com Pedras e Resina"
-            loading="lazy"
-          />
-        </div>
-      </div>
+      <ComponenteTextoFoto
+        nomeCurso={
+          "Curso de Artesanato com Pedras e Resina: Domine a Arte de Criar Peças Únicas e Lucrativas"
+        }
+        breveDescricao={
+          "Transforme suas ideias em peças que encantam e busque sucesso no mundo do artesanato com pedras e resina."
+        }
+        linkPagPagamento={"https://pay.hotmart.com/U102469342X?off=frwzmpjz&hotfeature=51&_hi=eyJjaWQiOiIxNzU5MjM2ODA5MTE5ODI1ODExMjE2MjU0MDU2NjAwIiwiYmlkIjoiMTc1OTIzNjgwOTExOTgyNTgxMTIxNjI1NDA1NjYwMCIsInNpZCI6IjRjZTNkOTllNGI1MjQ2OWJhN2UzYjk1Yzk2YWJiNWM0In0=.1761582950625"
+        }
+        srcImg={"/images/cursoPedras2.png"}
+        altImg={"Curso de Artesanato com Pedras e Resina"}
+      />
 
       <div className="flex flex-col my-3">
         <div>
@@ -99,18 +85,32 @@ const CursoPedrasResina = () => {
         </div>
       </div>
 
+      {/* Seção de Depoimentos 
+      {reviewData && reviewData.length > 0 && (
+        <div className="">
+          <h2 className="text-4xl p-3 md:text-6xl story-script-regular bg-[#e5e3d8]">
+            Depoimentos de Alunas Satisfeitas
+          </h2>
+          <div className="flex flex-wrap gap-3 items-center justify-center mx-auto my-4">
+            {reviewData.map((review) => (
+              <ReviewSection
+                key={review.id}
+                review={review.review}
+                name={review.name}
+                srcImg={review.srcImg}
+                datee={review.datee}
+              />
+            ))}
+          </div>
+        </div>
+      )}
+
+      */}
+
+
       {/* Aproveite em qualquer dispositivo */}
 
-      <div className=" w-full flex flex-col py-3 mt-8 mx-auto bg-[#e5e3d8]">
-        <img
-          className="max-w-[200px] mx-auto mb-3 drop-shadow-lg"
-          src="/images/devices.webp"
-          alt="Aproveite o conteúdo em qualquer dispositivo."
-        />
-        <p className="dm-serif-text-regular text-lg">
-          Aproveite o conteúdo em qualquer dispositivo.
-        </p>
-      </div>
+      <AproveiteEmDisp/>
 
       {/* Seção de Preço e Compra */}
 
@@ -121,7 +121,7 @@ const CursoPedrasResina = () => {
             <img
               className="drop-shadow-xl hidden lg:inline"
               src="/images/velaPilarMetade.png"
-              alt=""
+              alt="vela pilar fundo do mar"
               loading="lazy"
             />
           </div>
@@ -134,7 +134,7 @@ const CursoPedrasResina = () => {
             <img
               className="mx-auto md:max-w-[400px] drop-shadow-xl"
               src="/images/placaPreco.png"
-              alt=""
+              alt="preço curso pedras e resina"
               loading="lazy"
             />
             <p className="dm-serif-text-regular text-sm md:text-lg">
@@ -147,7 +147,7 @@ const CursoPedrasResina = () => {
             <img
               className="drop-shadow-xl hidden lg:inline"
               src="/images/velaSantaMetade.png"
-              alt=""
+              alt="vela gruta Santa"
               loading="lazy"
             />
           </div>
@@ -156,40 +156,13 @@ const CursoPedrasResina = () => {
           href="https://pay.hotmart.com/U102469342X?off=frwzmpjz&hotfeature=51&_hi=eyJjaWQiOiIxNzU5MjM2ODA5MTE5ODI1ODExMjE2MjU0MDU2NjAwIiwiYmlkIjoiMTc1OTIzNjgwOTExOTgyNTgxMTIxNjI1NDA1NjYwMCIsInNpZCI6IjRjZTNkOTllNGI1MjQ2OWJhN2UzYjk1Yzk2YWJiNWM0In0=.1761582950625"
           target="_blank"
           rel="noopener noreferrer"
-          className="mx-auto py-2 border border-black rounded-lg shadow-md text-amber-50 bg-[#9a5833] duration-500 hover:scale-105 hover:bg-[#e3d7bf] hover:text-gray-800 w-3/4 md:w-1/2"
+          className="mx-auto my-4 py-3 border border-black rounded-lg shadow-md text-amber-50 bg-[#9a5833] duration-500 hover:scale-105 hover:bg-[#e3d7bf] hover:text-gray-800 w-3/4 md:w-1/2"
         >
           Comprar Agora
         </a>
       </div>
 
-      <div className="flex flex-wrap-reverse py-3 w-full bg-[#e3d7bf] justify-center lg:justify-between">
-        <div className=" my-auto w-full lg:w-1/2 text-center px-3">
-          <div className="flex flex-col py-2">
-            <h2 className="py-3 text-3xl md:text-4xl story-script-regular">
-              GARANTIA INCONTESTÁVEL DE 7 DIAS
-            </h2>
-            <hr />
-            <p className="py-3 text-md  dm-serif-text-regular te">
-              Milhares de pessoas comuns como você estão mudando suas realidades
-              com o poder do digital.
-              Isso significa que você também pode mudar
-              a sua vida para melhor. Mas caso não goste do que encontrar,
-              devolvo seu dinheiro de volta sem perguntas até 7 dias após a
-              compra.
-            </p>
-         
-          </div>
-        </div>
-
-        <div className="flex justify-center w-full lg:w-1/2 text-center my-2">
-          <img
-            className="drop-shadow-lg max-w-full h-auto lg:w-[65%]"
-            src="/images/garantiaVendas.png"
-            alt="Curso de Artesanato com Pedras e Resina"
-            loading="lazy"
-          />
-        </div>
-      </div>
+      <GarantiaIncont/>
 
       {/* Seção Perguntas Frequentes */}
     </div>
