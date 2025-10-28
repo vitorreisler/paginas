@@ -1,6 +1,7 @@
 import AproveiteEmDisp from "@/components/aproveiteEmDisp";
 import ComponenteTextoFoto from "@/components/componenteTextoFoto";
 import GarantiaIncont from "@/components/garantiaIncont";
+import PerguntasFAQSection from "@/components/perguntasFAQ";
 import ReviewSection from "@/components/reviewSection";
 import { reviewData } from "@/data/reviewData";
 
@@ -153,7 +154,9 @@ const CursoPedrasResina = () => {
         </a>
       </div>
 
-      <GarantiaIncont/>
+      <GarantiaIncont />
+
+      <PerguntasFAQSection/>
 
       {/* Seção Perguntas Frequentes */}
     </div>
