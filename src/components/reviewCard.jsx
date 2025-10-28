@@ -14,7 +14,7 @@ const ReviewCard = ({ review, srcImg, name, datee }) => {
         </div>
         
       </div>
-      <p className="text-gray-700 text-base italic">"{review}"</p>
+      <p className="text-gray-700 text-start italic">"{review}"</p>
     </div>
   );
 };
