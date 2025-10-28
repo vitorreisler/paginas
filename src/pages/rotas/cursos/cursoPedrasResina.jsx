@@ -85,27 +85,18 @@ const CursoPedrasResina = () => {
         </div>
       </div>
 
-      {/* Seção de Depoimentos 
       {reviewData && reviewData.length > 0 && (
         <div className="">
           <h2 className="text-4xl p-3 md:text-6xl story-script-regular bg-[#e5e3d8]">
-            Depoimentos de Alunas Satisfeitas
+            Depoimentos das Alunas 
           </h2>
           <div className="flex flex-wrap gap-3 items-center justify-center mx-auto my-4">
-            {reviewData.map((review) => (
-              <ReviewSection
-                key={review.id}
-                review={review.review}
-                name={review.name}
-                srcImg={review.srcImg}
-                datee={review.datee}
-              />
-            ))}
+              <ReviewSection/>
           </div>
         </div>
       )}
 
-      */}
+      
 
 
       {/* Aproveite em qualquer dispositivo */}
