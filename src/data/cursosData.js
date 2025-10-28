@@ -8,13 +8,5 @@ export const cursosData = [
     hashtag2: "#Gruta",
     hashtag3: "#Bônus"
 },
-{
-    rotaProCurso: "balao",
-    srcImg: "/images/cursoPedras.jpg",
-    tituloCurso: "balones",
-    descricaoCurso: "balaozinho",
-    hashtag1: "#bum",
-    hashtag2: "#Gbim",
-    hashtag3: "#ajajaj"
-},
+
 ]
