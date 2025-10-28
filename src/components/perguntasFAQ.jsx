@@ -16,9 +16,9 @@ const PerguntasFAQSection = () => {
     >
       {dataFAQ.map(({ id, titulo, resposta }) => (
         <AccordionItem key={id} value={`item-${id}`}>
-          <AccordionTrigger>{titulo}</AccordionTrigger>
+          <AccordionTrigger className={"dm-serif-text-regular text-lg md:text-2xl"}>{titulo}</AccordionTrigger>
           <AccordionContent className="flex flex-col gap-4 text-balance">
-            <p>{resposta}</p>
+            <p className= " text-start text-md md:text-xl" >{resposta}</p>
           </AccordionContent>
         </AccordionItem>
       ))}

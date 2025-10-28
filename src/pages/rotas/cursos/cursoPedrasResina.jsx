@@ -97,15 +97,12 @@ const CursoPedrasResina = () => {
         </div>
       )}
 
-      
-
-
       {/* Aproveite em qualquer dispositivo */}
-
       <AproveiteEmDisp/>
 
-      {/* Seção de Preço e Compra */}
 
+
+      {/* Seção de Preço e Compra */}
       <div className=" w-full flex flex-col justify-center px-1 py-3 mt-8 mx-auto bg-[#e5e3d8]">
         <div className="flex flex-row justify-center items-center gap-3 mb-3">
           <div className="">
@@ -156,9 +153,10 @@ const CursoPedrasResina = () => {
 
       <GarantiaIncont />
 
-      <PerguntasFAQSection/>
 
       {/* Seção Perguntas Frequentes */}
+      <PerguntasFAQSection/>
+
     </div>
   );
 };

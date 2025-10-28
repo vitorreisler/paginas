@@ -47,6 +47,7 @@ const Navbar = () => {
               width={80}
               height={80}
               alt="Silvia Monteiro"
+              loading="lazy"
             />
           </Link>
         )}
