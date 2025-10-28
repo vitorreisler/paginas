@@ -1,4 +1,5 @@
 import AproveiteEmDisp from "@/components/aproveiteEmDisp";
+import BotaoPadrao from "@/components/botaoPadrao";
 import ComponenteTextoFoto from "@/components/componenteTextoFoto";
 import GarantiaIncont from "@/components/garantiaIncont";
 import PerguntasFAQSection from "@/components/perguntasFAQ";
@@ -141,14 +142,9 @@ const CursoPedrasResina = () => {
             />
           </div>
         </div>
-        <a
-          href="https://pay.hotmart.com/U102469342X?off=frwzmpjz&hotfeature=51&_hi=eyJjaWQiOiIxNzU5MjM2ODA5MTE5ODI1ODExMjE2MjU0MDU2NjAwIiwiYmlkIjoiMTc1OTIzNjgwOTExOTgyNTgxMTIxNjI1NDA1NjYwMCIsInNpZCI6IjRjZTNkOTllNGI1MjQ2OWJhN2UzYjk1Yzk2YWJiNWM0In0=.1761582950625"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mx-auto my-4 py-3 border border-black rounded-lg shadow-md text-amber-50 bg-[#9a5833] duration-500 hover:scale-105 hover:bg-[#e3d7bf] hover:text-gray-800 w-3/4 md:w-1/2"
-        >
-          Comprar Agora
-        </a>
+        
+        <BotaoPadrao hrefLink={"https://pay.hotmart.com/U102469342X?off=frwzmpjz&hotfeature=51&_hi=eyJjaWQiOiIxNzU5MjM2ODA5MTE5ODI1ODExMjE2MjU0MDU2NjAwIiwiYmlkIjoiMTc1OTIzNjgwOTExOTgyNTgxMTIxNjI1NDA1NjYwMCIsInNpZCI6IjRjZTNkOTllNGI1MjQ2OWJhN2UzYjk1Yzk2YWJiNWM0In0=.1761582950625"} />
+        
       </div>
 
       <GarantiaIncont />

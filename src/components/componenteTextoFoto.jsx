@@ -1,3 +1,5 @@
+import BotaoPadrao from "./botaoPadrao";
+
 const ComponenteTextoFoto = ({nomeCurso,breveDescricao,linkPagPagamento, srcImg, altImg}) => {
     return ( 
         <div className="flex flex-wrap-reverse w-full bg-[#e3d7bf] justify-center lg:justify-between">
@@ -10,14 +12,7 @@ const ComponenteTextoFoto = ({nomeCurso,breveDescricao,linkPagPagamento, srcImg,
             <h3 className="py-3 text-xl md:text-xl dm-serif-text-regular">
               {breveDescricao}
             </h3>
-            <a
-              href={linkPagPagamento}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mx-auto py-2 rounded-lg shadow-md text-amber-50 bg-[#9a5833] duration-500 hover:scale-105 hover:bg-[#e3d7bf] hover:text-gray-800 w-3/4 md:w-1/2"
-            >
-              Comprar Agora
-            </a>
+            <BotaoPadrao hrefLink={linkPagPagamento}/>
           </div>
         </div>
 
