@@ -7,12 +7,19 @@ export default function Document() {
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-43QS3EYYCV"
-        ></script>
-        <script>
-          window.dataLayer = window.dataLayer || []; function gtag()
-          {dataLayer.push(arguments)}
-          gtag('js', new Date()); gtag('config', 'G-43QS3EYYCV');
-        </script>
+        />
+
+        {/* Script de inicialização do GA */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-43QS3EYYCV', { page_path: window.location.pathname });
+            `,
+          }}
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Story+Script&display=swap"
           rel="stylesheet"
