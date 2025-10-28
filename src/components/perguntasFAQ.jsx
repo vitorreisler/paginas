@@ -15,7 +15,7 @@ const PerguntasFAQSection = () => {
       defaultValue="item-1"
     >
       {dataFAQ.map(({ id, titulo, resposta }) => (
-        <AccordionItem value={`item-${id}`}>
+        <AccordionItem key={id} value={`item-${id}`}>
           <AccordionTrigger>{titulo}</AccordionTrigger>
           <AccordionContent className="flex flex-col gap-4 text-balance">
             <p>{resposta}</p>
