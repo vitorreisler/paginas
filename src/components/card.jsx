@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Card = ({
   rotaProCurso,
   srcImg,
@@ -13,7 +15,7 @@ const Card = ({
       itemScope
       itemType="https://schema.org/Course"
     >
-      <a
+      <Link
         href={`/rotas/cursos/${rotaProCurso}`}
         className="block"
         itemProp="url"
@@ -68,7 +70,7 @@ const Card = ({
             </span>
           )}
         </div>
-      </a>
+      </Link>
     </article>
   );
 };

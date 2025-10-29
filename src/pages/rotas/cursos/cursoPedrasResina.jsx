@@ -1,3 +1,4 @@
+import Head from "next/head";
 import AproveiteEmDisp from "@/components/aproveiteEmDisp";
 import BotaoPadrao from "@/components/botaoPadrao";
 import ComponenteTextoFoto from "@/components/componenteTextoFoto";
@@ -8,7 +9,20 @@ import { reviewData } from "@/data/reviewData";
 
 const CursoPedrasResina = () => {
   return (
-    <div className="flex flex-col text-center p-2 bg-[#e3d7bf] rounded-xl drop-shadow-lg">
+    <>
+      <Head>
+        <title>Curso de Pedras e Resina — By Silvia Monteiro</title>
+        <meta
+          name="description"
+          content="Curso completo de artesanato com pedras e resina — aprenda técnicas práticas para criar peças únicas e vender online."
+        />
+        <meta property="og:title" content="Curso de Pedras e Resina — By Silvia Monteiro" />
+        <meta property="og:description" content="Curso completo de artesanato com pedras e resina — aprenda técnicas práticas e passo a passo." />
+        <meta property="og:image" content="https://seudominio.com/images/cursoPedrasCover.png" />
+        <link rel="canonical" href="https://seudominio.com/rotas/cursos/cursoPedrasResina" />
+      </Head>
+
+      <div className="flex flex-col text-center p-2 bg-[#e3d7bf] rounded-xl drop-shadow-lg">
       <ComponenteTextoFoto
         nomeCurso={
           "Curso de Artesanato com Pedras e Resina: Domine a Arte de Criar Peças Únicas e Lucrativas"
@@ -154,6 +168,7 @@ const CursoPedrasResina = () => {
       <PerguntasFAQSection/>
 
     </div>
+    </>
   );
 };
 

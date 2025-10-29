@@ -1,10 +1,25 @@
+import Head from "next/head";
 import CarroselPersonalizado from "@/components/carroselPersonalizado";
 import VideoTexto from "@/components/componenteVideoTexto";
 import GaleriaVideos from "@/components/galeriaVidos";
 
 export default function Home() {
   return (
-    <div>
+    <>
+      <Head>
+        <title>By Silvia Monteiro — Artesanato, Velas e Cursos</title>
+        <meta
+          name="description"
+          content="By Silvia Monteiro — curso e peças artesanais em resina e velas. Confira trabalhos, depoimentos e cursos disponíveis."
+        />
+        {/* Open Graph / Social (replace seudominio.com com seu domínio real) */}
+        <meta property="og:title" content="By Silvia Monteiro — Artesanato, Velas e Cursos" />
+        <meta property="og:description" content="Curso e peças artesanais em resina e velas. Confira trabalhos e depoimentos." />
+        <meta property="og:image" content="https://seudominio.com/images/cover.jpg" />
+        <link rel="canonical" href="https://seudominio.com/" />
+      </Head>
+
+      <div>
       <h1 className="text-3xl font-bold mb-4 text-center">Bem-vindo!</h1>
       <CarroselPersonalizado />
 
@@ -51,5 +66,6 @@ export default function Home() {
         </div>
       </div>
     </div>
+    </>
   );
 }
