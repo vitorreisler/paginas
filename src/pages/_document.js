@@ -2,11 +2,12 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html lang="pt-BR">
       <Head>
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-43QS3EYYCV"
+          rel="preconnect"
         />
 
         {/* Script de inicialização do GA */}

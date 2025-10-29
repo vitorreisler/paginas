@@ -8,6 +8,14 @@ const GaleriaVideos = () => {
       titulo: "Video 2",
       srcVideo: "videoSafari.mp4",
     },
+    {
+      titulo: "Video 3",
+      srcVideo: "videoVelaGruta.mov",
+    },
+    {
+      titulo: "Video 4",
+      srcVideo: "videoVelaDesmoldada.mov",
+    },
   ];
   return (
     <div className=" p-6 rounded-b-2xl shadow-md flex flex-wrap gap-4 justify-center items-center lg:justify-start ">
