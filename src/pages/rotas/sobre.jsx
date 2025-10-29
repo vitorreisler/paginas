@@ -7,6 +7,7 @@ const Sobre = () => {
             className="w-[600px] drop-shadow-lg rounded-lg"
             src="/images/thumb difusor varetas.png"
             alt="silvia artesã com difusor de varetas"
+            loading="lazy"
           />
         </div>
         <div className="col max-w-[500px] ">
@@ -37,7 +38,8 @@ const Sobre = () => {
           <img
             className="w-[500px] pt-3 drop-shadow-lg rounded-lg"
             src="/images/thumb homespray.png"
-            alt="silvia artesã com vela desmoldada"
+            alt="silvia artesã com home spray"
+            loading="lazy"
           />
         </div>
       </div>
@@ -48,7 +50,8 @@ const Sobre = () => {
           <img
             className="w-[500px] drop-shadow-lg rounded-lg"
             src="/images/vela desmoldada.png"
-            alt=""
+            alt="silvia artesã com vela desmoldada"
+            loading="lazy"
           />
         </div>
         <div className="col max-w-[500px]">
@@ -82,7 +85,8 @@ const Sobre = () => {
           <img
             className="w-[500px] pt-3 drop-shadow-lg rounded-lg"
             src="/images/Thumb Sab liq Intimo.png"
-            alt="silvia artesã com vela desmoldada"
+            alt="silvia artesã com sabonete líquido íntimo"
+            loading="lazy"
           />
         </div>
       </div>
