@@ -12,11 +12,15 @@ export default function Home() {
           By Silvia Monteiro — Artesanato, Velas e Cursos Artesanais
         </title>
         <meta charSet="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  {/* Resource hints to improve performance */}
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-  <link rel="dns-prefetch" href="https://seudominio.com" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* Resource hints to improve performance */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin=""
+        />
+        <link rel="dns-prefetch" href="https://seudominio.com" />
         <meta
           name="description"
           content="Cursos de artesanato, velas artesanais e peças exclusivas em resina. Aprenda técnicas profissionais de artesanato com Silvia Monteiro. Aulas online, kits completos e suporte personalizado."
@@ -125,7 +129,7 @@ export default function Home() {
           {/*<GaleriaVideos />*/}
           <VideoTexto
             text="Velas estilizadas sob encomenda."
-          srcImg={"video-1031.mp4"}
+            srcImg={"video-1031.mp4"}
           />
           <div className="flex flex-wrap-reverse w-full bg-[#e3d7bf] justify-center lg:justify-between">
             <div className="my-auto w-full lg:w-1/2 text-center px-3">
