@@ -44,7 +44,7 @@ export default function Home() {
         <div className="flex justify-center w-full lg:w-1/2 text-center my-2 p-4">
           <img
             className="drop-shadow-lg max-w-full h-auto lg:w-[60%] rounded-xl"
-            src="/images/LinhaVanilla.jpeg"
+            src="/images/linhaVanilla.jpeg" 
             alt="LinhaVanilla"
             loading="lazy"
           />
