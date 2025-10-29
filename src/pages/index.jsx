@@ -1,5 +1,7 @@
 import CarroselPersonalizado from "@/components/carroselPersonalizado";
+import TextoVideo from "@/components/componenteTextoVideo";
 import VideoTexto from "@/components/componenteVideoTexto";
+import GaleriaVideos from "@/components/galeriaVidos";
 
 export default function Home() {
   return (
@@ -10,7 +12,10 @@ export default function Home() {
       <h2 className=" mt-8 text-center story-script-regular text-4xl bg-[#e3d7bf] rounded-t-2xl">
         Um pouco dos meus outros trabalhos
       </h2>
-      <VideoTexto text="" />
+      <GaleriaVideos/>
+      <VideoTexto text="abc" srcImg={"1031.mp4"} />
+      <TextoVideo text="abc" srcImg={"videoSafari.mp4"} />
+
     </div>
   );
 }
