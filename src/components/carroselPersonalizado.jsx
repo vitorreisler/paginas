@@ -15,9 +15,9 @@ const CarroselPersonalizado = () => {
         <Carousel>
           <CarouselContent>
             {/* Slides  */}
-            {carroselData.map(({index, srcImg, textoDentro}) => {
+            {carroselData.map(({index,id,  srcImg, textoDentro}) => {
               return (
-                <CarouselItem key={index} className="relative">
+                <CarouselItem key={id} className="relative">
                   <img
                   key={srcImg}
                     src={srcImg}
