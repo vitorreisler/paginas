@@ -1,3 +1,6 @@
+import BotaoPadrao from "./botaoPadrao";
+import Image from "next/image";
+
 const FotoTexto = ({
   nomeCurso,
   breveDescricao,
@@ -8,11 +11,12 @@ const FotoTexto = ({
   return (
     <div className="flex flex-wrap-reverse w-full bg-[#e3d7bf] justify-center lg:justify-between">
       <div className="flex justify-center w-full lg:w-1/2 text-center my-2">
-        <img
+        <Image
           className="drop-shadow-lg max-w-full h-auto lg:w-[75%]"
           src={srcImg}
           alt={altImg}
-          loading="lazy"
+          width={800}
+          height={600}
         />
       </div>
       <div className=" my-auto w-full lg:w-1/2 text-center px-3">

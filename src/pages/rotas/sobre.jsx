@@ -5,7 +5,7 @@ const Sobre = () => {
         <div className="col">
           <img
             className="w-[600px] drop-shadow-lg rounded-lg"
-            src="/images/thumb difusor varetas.png"
+            src="/images/thumb-difusor-varetas.webp"
             alt="silvia artesã com difusor de varetas"
             loading="lazy"
           />
@@ -37,7 +37,7 @@ const Sobre = () => {
         <div className="col">
           <img
             className="w-[500px] pt-3 drop-shadow-lg rounded-lg"
-            src="/images/thumb homespray.png"
+            src="/images/thumb-homespray.webp"
             alt="silvia artesã com home spray"
             loading="lazy"
           />
@@ -49,7 +49,7 @@ const Sobre = () => {
         <div className="col py-3">
           <img
             className="w-[500px] drop-shadow-lg rounded-lg"
-            src="/images/vela desmoldada.png"
+            src="/images/vela-desmoldada.webp"
             alt="silvia artesã com vela desmoldada"
             loading="lazy"
           />
@@ -84,7 +84,7 @@ const Sobre = () => {
         <div className="col">
           <img
             className="w-[500px] pt-3 drop-shadow-lg rounded-lg"
-            src="/images/Thumb Sab liq Intimo.png"
+            src="/images/thumb-sab-liq-intimo.webp"
             alt="silvia artesã com sabonete líquido íntimo"
             loading="lazy"
           />
