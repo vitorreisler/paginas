@@ -7,6 +7,7 @@ const VideoTexto = ({text = ""}) => {
           src="/images/1031.mp4"
           autoPlay
           loop
+          muted
         />
       </div>
       <div className="w-full lg:w-1/2 ">
