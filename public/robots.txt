@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Sitemap: https://seudominio.com/sitemap.xml
+
+# Permitir rastreamento de todas as páginas importantes
+Allow: /rotas/cursos
+Allow: /rotas/sobre
+Allow: /rotas/media
+Allow: /rotas/cursos/cursoPedrasResina
+
+# Diretórios que não precisam ser indexados
+Disallow: /api/
+Disallow: /_next/static/

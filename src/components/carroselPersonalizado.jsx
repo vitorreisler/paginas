@@ -6,6 +6,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Image from "next/image";
 
 const CarroselPersonalizado = () => {
   return (
@@ -15,21 +16,20 @@ const CarroselPersonalizado = () => {
         <Carousel>
           <CarouselContent>
             {/* Slides  */}
-            {carroselData.map(({index,id,  srcImg, textoDentro}) => {
-              return (
-                <CarouselItem key={id} className="relative">
-                  <img
-                  key={srcImg}
-                    src={srcImg}
-                    alt={textoDentro}
-                    className="w-full h-[250px] sm:h-[350px] md:h-[450px] object-cover rounded-lg"
-                  />
-                  <h1 key={textoDentro} className="absolute inset-0 flex items-center justify-center text-lg sm:text-2xl md:text-3xl font-bold text-white bg-black/40 text-center px-2 sm:px-4">
-                    {textoDentro}
-                  </h1>
-                </CarouselItem>
-              );
-            })}
+            {carroselData.map((item) => (
+              <CarouselItem key={item.id} className="relative">
+                <Image
+                  src={item.srcImg}
+                  alt={item.textoDentro}
+                  width={1200}
+                  height={600}
+                  className="w-full h-[250px] sm:h-[350px] md:h-[450px] object-cover rounded-lg"
+                />
+                <h1 className="absolute inset-0 flex items-center justify-center text-lg sm:text-2xl md:text-3xl font-bold text-white bg-black/40 text-center px-2 sm:px-4">
+                  {item.textoDentro}
+                </h1>
+              </CarouselItem>
+            ))}
           </CarouselContent>
 
           {/* Setas laterais centralizadas */}

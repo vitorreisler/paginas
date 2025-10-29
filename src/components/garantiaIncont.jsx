@@ -19,7 +19,7 @@ const GarantiaIncont = () => {
       <div className="flex justify-center w-full lg:w-1/2 text-center my-2">
         <img
           className="drop-shadow-lg max-w-full h-auto lg:w-[65%]"
-          src="/images/garantiaVendas.png"
+          src="/images/garantia-vendas.webp"
           alt="Curso de Artesanato com Pedras e Resina"
           loading="lazy"
         />

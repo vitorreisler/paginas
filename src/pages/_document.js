@@ -8,7 +8,11 @@ export default function Document() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="true"
+        />
 
         <link
           href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Story+Script&display=swap"
@@ -18,7 +22,10 @@ export default function Document() {
         <link rel="icon" href="/favicon.ico" />
         <meta name="theme-color" content="#ffffff" />
 
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-43QS3EYYCV" />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-43QS3EYYCV"
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-43QS3EYYCV', { page_path: window.location.pathname });`,

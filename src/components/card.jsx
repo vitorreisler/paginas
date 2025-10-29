@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const Card = ({
   rotaProCurso,
@@ -21,12 +22,14 @@ const Card = ({
         itemProp="url"
         aria-label={descricaoCurso}
       >
-        <img
+        <Image
           className="object-cover w-full h-32 sm:h-40 md:h-48"
           src={srcImg}
           alt={descricaoCurso}
           itemProp="image"
           loading="lazy"
+          width={320}
+          height={200}
         />
         <div className="px-3 sm:px-4 pt-2 pb-1">
           <h2

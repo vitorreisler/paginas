@@ -6,7 +6,11 @@ const Footer = () => {
       <div className="w-full mx-auto p-4 md:flex md:items-center md:justify-between">
         <span className="text-sm text-gray-300 sm:text-center ">
           © 2025{" "}
-          <a target="_blank" href="https://www.instagram.com/silviamonteiro.art/" className="hover:underline">
+          <a
+            target="_blank"
+            href="https://www.instagram.com/silviamonteiro.art/"
+            className="hover:underline"
+          >
             BySilviaMonteiro
           </a>
           . All Rights Reserved.

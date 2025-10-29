@@ -2,19 +2,19 @@ const GaleriaVideos = () => {
   const videos = [
     {
       titulo: "Video 1",
-      srcVideo: "1031.mp4",
+      srcVideo: "video-1031.mp4",
     },
     {
       titulo: "Video 2",
-      srcVideo: "videoSafari.mp4",
+      srcVideo: "video-safari.mp4",
     },
     {
       titulo: "Video 3",
-      srcVideo: "videoVelaGruta.mov",
+      srcVideo: "video-vela-gruta.mov",
     },
     {
       titulo: "Video 4",
-      srcVideo: "videoVelaDesmoldada.mov",
+      srcVideo: "video-vela-desmoldada.mov",
     },
   ];
   return (

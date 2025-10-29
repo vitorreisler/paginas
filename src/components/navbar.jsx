@@ -2,13 +2,18 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
-
 const Navbar = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
+
   useEffect(() => {
-    if (window.screen.width < 500) {
-      setIsSmallScreen(true);
-    }
+    const checkScreenSize = () => {
+      setIsSmallScreen(window.innerWidth < 500);
+    };
+
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+
+    return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
   const rota = "/rotas";
@@ -25,25 +30,26 @@ const Navbar = () => {
       nome: "Cursos",
       rota: `${rota}/cursos`,
     },
-    
+
     {
       nome: "Media",
       rota: `${rota}/media`,
     },
-
   ];
   return (
     <nav className="border-gray-200">
       <div className="flex flex-wrap items-center justify-between  px-4 mx-auto ">
         {isSmallScreen ? (
-          <span className="flex text-gray-100 gap-1 py-3">BySilviaMonteiro</span>
+          <span className="flex text-gray-100 gap-1 py-3">
+            BySilviaMonteiro
+          </span>
         ) : (
           <Link
             href="/"
             className="flex items-center rounded-3xl overflow-hidden  "
           >
             <Image
-              src="/images/fotoperfil.jpg"
+              src="/images/foto-perfil.webp"
               width={80}
               height={80}
               alt="Silvia Monteiro"
