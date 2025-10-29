@@ -1,6 +1,6 @@
 import BotaoPadrao from "./botaoPadrao";
 
-const ComponenteTextoFoto = ({nomeCurso,breveDescricao,linkPagPagamento, srcImg, altImg}) => {
+const TextoFoto = ({nomeCurso,breveDescricao,linkPagPagamento, srcImg, altImg}) => {
     return ( 
         <div className="flex flex-wrap-reverse w-full bg-[#e3d7bf] justify-center lg:justify-between">
         <div className=" my-auto w-full lg:w-1/2 text-center px-3">
@@ -12,7 +12,7 @@ const ComponenteTextoFoto = ({nomeCurso,breveDescricao,linkPagPagamento, srcImg,
             <h3 className="py-3 text-xl md:text-xl dm-serif-text-regular">
               {breveDescricao}
             </h3>
-            <BotaoPadrao hrefLink={linkPagPagamento}/>
+           {linkPagPagamento && <BotaoPadrao hrefLink={linkPagPagamento}/>}
           </div>
         </div>
 
@@ -28,4 +28,4 @@ const ComponenteTextoFoto = ({nomeCurso,breveDescricao,linkPagPagamento, srcImg,
      );
 }
  
-export default ComponenteTextoFoto;
+export default TextoFoto;
