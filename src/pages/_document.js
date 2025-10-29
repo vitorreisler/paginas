@@ -7,7 +7,7 @@ export default function Document() {
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-43QS3EYYCV"
-          rel="preconnect"
+          rel="preconnect" 
         />
 
         {/* Script de inicialização do GA */}
