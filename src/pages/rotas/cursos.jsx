@@ -28,11 +28,19 @@ const Cursos = () => {
           href="https://cursossilvia.vercel.app/rotas/cursos"
         />
       </Head>
-      <div className="justify-center bg-[#e3d7bf] item-center rounded-lg shadow-md py-3">
-        <h2 className="text-center pb-3 text-5xl story-script-regular">
-          Meus Cursos
-        </h2>
-        <div className="flex flex-wrap justify-center md:justify-center gap-8 bg-[#e3d7bf]">
+      <section
+        className="justify-center bg-[#e3d7bf] item-center rounded-lg shadow-md py-3"
+        aria-label="Catálogo de cursos"
+      >
+        <header>
+          <h1 className="text-center pb-3 text-5xl story-script-regular">
+            Meus Cursos
+          </h1>
+        </header>
+        <div
+          className="flex flex-wrap justify-center md:justify-center gap-8 bg-[#e3d7bf]"
+          role="list"
+        >
           {cursosData.map((curso, index) => (
             <Card
               key={index}
@@ -46,7 +54,7 @@ const Cursos = () => {
             />
           ))}
         </div>
-      </div>
+      </section>
     </>
   );
 };
