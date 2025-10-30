@@ -46,7 +46,7 @@ const CursoPedrasResina = () => {
           linkPagPagamento={
             "https://pay.hotmart.com/U102469342X?off=frwzmpjz&hotfeature=51&_hi=eyJjaWQiOiIxNzU5MjM2ODA5MTE5ODI1ODExMjE2MjU0MDU2NjAwIiwiYmlkIjoiMTc1OTIzNjgwOTExOTgyNTgxMTIxNjI1NDA1NjYwMCIsInNpZCI6IjRjZTNkOTllNGI1MjQ2OWJhN2UzYjk1Yzk2YWJiNWM0In0=.1761582950625"
           }
-          srcImg={"/images/curso-pedras-2.webp"}
+          srcImg={"/images/curso-pedras-2-vital.webp"}
           altImg={"Curso de Artesanato com Pedras e Resina"}
         />
 
