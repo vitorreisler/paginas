@@ -49,7 +49,7 @@ const CursoPedrasResina = () => {
         </div>
           {/* Seção de apresentação */}
         <div>
-          <h2 className="text-4xl p-3 md:text-6xl story-script-regular bg-[#e5e3d8]">
+          <h2 className="text-4xl text-center p-3 md:text-6xl story-script-regular bg-[#e5e3d8]">
             Sobre o conteúdo
           </h2>
           <p className="p-3 text-lg bg-[#e3d7bf] text-start dm-serif-text-regular">
@@ -71,7 +71,7 @@ const CursoPedrasResina = () => {
 
         {/* Seção: O que você vai aprender */}
         <div>
-          <h2 className="text-4xl p-3 md:text-6xl story-script-regular bg-[#e5e3d8]">
+          <h2 className="text-4xl text-center p-3 md:text-6xl story-script-regular bg-[#e5e3d8]">
             Você vai aprender
           </h2>
           <ul className="py-3 px-8 text-lg bg-[#e3d7bf] text-start dm-serif-text-regular list-disc">
@@ -98,7 +98,7 @@ const CursoPedrasResina = () => {
 
         {/* Bônus */}
         <div>
-          <h2 className="text-4xl p-3 md:text-6xl story-script-regular bg-[#e5e3d8]">
+          <h2 className="text-4xl text-center p-3 md:text-6xl story-script-regular bg-[#e5e3d8]">
             Bônus Exclusivo
           </h2>
           <ul className="py-3 px-8 text-lg bg-[#e3d7bf] text-start dm-serif-text-regular list-disc">
@@ -119,7 +119,7 @@ const CursoPedrasResina = () => {
         {/* Depoimentos */}
         {reviewData && reviewData.length > 0 && (
           <div>
-            <h2 className="text-4xl p-3 md:text-6xl story-script-regular bg-[#e5e3d8] text-center">
+            <h2 className="text-4xl text-center p-3 md:text-6xl story-script-regular bg-[#e5e3d8]">
               Depoimentos das Alunas
             </h2>
             <div className="flex flex-wrap gap-3 items-center justify-center mx-auto my-4">
@@ -133,7 +133,7 @@ const CursoPedrasResina = () => {
 
         {/* Seção de Preço e Compra */}
         <div className="w-full flex flex-col justify-center px-1 py-3 mt-8 mx-auto bg-[#e5e3d8]">
-          <div className="flex flex-row justify-center items-center gap-3 mb-3">
+          <div className="flex flex-row justify-between items-center gap-3 mb-3 border border-black">
             <Image
               className="drop-shadow-xl hidden lg:inline"
               src="/images/vela-pilar-metade.webp"
