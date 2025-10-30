@@ -140,7 +140,7 @@ const CursoPedrasResina = () => {
               alt="vela pilar fundo do mar"
               width={300}
               height={400}
-            /> 
+            />
 
             <div className="text-center">
               <p className="p-2 dm-serif-text-regular text-3xl md:text-5xl">
