@@ -20,7 +20,18 @@ export default function Home() {
           href="https://fonts.gstatic.com"
           crossOrigin=""
         />
-        <link rel="dns-prefetch" href="https://seudominio.com" />
+        <link rel="dns-prefetch" href="https://cursossilvia.vercel.app/" />
+        {/* Preload Google Fonts for faster rendering */}
+        <link
+          rel="preload"
+          as="style"
+          href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:wght@400;700&family=Story+Script&display=swap"
+        />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:wght@400;700&family=Story+Script&display=swap"
+          media="all"
+        />
         <meta
           name="description"
           content="Cursos de artesanato, velas artesanais e peças exclusivas em resina. Aprenda técnicas profissionais de artesanato com Silvia Monteiro. Aulas online, kits completos e suporte personalizado."
@@ -43,9 +54,9 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://seudominio.com/images/cover.jpg"
+          content="https://cursossilvia.vercel.app/images/cover.jpg"
         />
-        <meta property="og:url" content="https://seudominio.com/" />
+        <meta property="og:url" content="https://cursossilvia.vercel.app/" />
         <meta property="og:site_name" content="By Silvia Monteiro" />
 
         {/* Twitter */}
@@ -60,10 +71,10 @@ export default function Home() {
         />
         <meta
           name="twitter:image"
-          content="https://seudominio.com/images/cover.jpg"
+          content="https://cursossilvia.vercel.app/images/cover.jpg"
         />
 
-        <link rel="canonical" href="https://seudominio.com/" />
+        <link rel="canonical" href="https://cursossilvia.vercel.app/" />
 
         {/* Schema.org JSON-LD para Rich Snippets */}
         <script
@@ -74,10 +85,10 @@ export default function Home() {
               "@type": "WebSite",
               name: "By Silvia Monteiro",
               description: "Artesanato e cursos artesanais especializados",
-              url: "https://seudominio.com",
+              url: "https://cursossilvia.vercel.app/",
               potentialAction: {
                 "@type": "SearchAction",
-                target: "https://seudominio.com/search?q={search_term_string}",
+                target: "https://cursossilvia.vercel.app/search?q={search_term_string}",
                 "query-input": "required name=search_term_string",
               },
               sameAs: [
@@ -90,7 +101,7 @@ export default function Home() {
                   name: "Curso de Pedras e Resina",
                   description:
                     "Aprenda a criar peças únicas com pedras e resina",
-                  price: "297.00",
+                  price: "39.90",
                   priceCurrency: "BRL",
                   availability: "https://schema.org/InStock",
                 },
@@ -147,6 +158,8 @@ export default function Home() {
                 alt="Linha Gentleman - Velas artesanais premium com aroma sofisticado e acabamento elegante"
                 width={1200}
                 height={800}
+                srcSet="/images/linha-gentleman.webp 600w, /images/linha-gentleman@2x.webp 1200w"
+                sizes="(max-width: 500px) 95vw, 1200px"
               />
             </div>
           </div>
@@ -170,6 +183,8 @@ export default function Home() {
                 alt="Linha Vanilla - Coleção exclusiva de velas artesanais com fragrância natural de baunilha"
                 width={1200}
                 height={800}
+                srcSet="/images/linha-vanilla.webp 600w, /images/linha-vanilla@2x.webp 1200w"
+                sizes="(max-width: 500px) 95vw, 1200px"
               />
             </div>
           </div>

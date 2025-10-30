@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Sobre = () => {
   return (
     <article
@@ -14,12 +16,16 @@ const Sobre = () => {
         aria-label="Introdução"
       >
         <figure className="col">
-          <img
+          <Image
             className="w-[600px] drop-shadow-lg rounded-lg"
             src="/images/thumb-difusor-varetas.webp"
             alt="Silvia demonstrando a criação de difusor de varetas"
             loading="lazy"
+            width={600}
+            height={400}
             itemProp="image"
+            srcSet="/images/thumb-difusor-varetas.webp 300w, /images/thumb-difusor-varetas@2x.webp 600w"
+            sizes="(max-width: 500px) 95vw, 600px"
           />
         </figure>
         <div className="col max-w-[500px]">
@@ -50,11 +56,15 @@ const Sobre = () => {
           </p>
         </div>
         <figure className="col">
-          <img
+          <Image
             className="w-[500px] pt-3 drop-shadow-lg rounded-lg"
             src="/images/thumb-homespray.webp"
             alt="Silvia apresentando seu home spray artesanal"
             loading="lazy"
+            width={500}
+            height={350}
+            srcSet="/images/thumb-homespray.webp 250w, /images/thumb-homespray@2x.webp 500w"
+            sizes="(max-width: 500px) 95vw, 500px"
           />
         </figure>
       </section>
@@ -65,11 +75,15 @@ const Sobre = () => {
         aria-label="Especialização"
       >
         <figure className="col py-3">
-          <img
+          <Image
             className="w-[500px] drop-shadow-lg rounded-lg"
             src="/images/vela-desmoldada.webp"
             alt="Silvia demonstrando o processo de desmoldagem de vela artesanal"
             loading="lazy"
+            width={500}
+            height={350}
+            srcSet="/images/vela-desmoldada.webp 250w, /images/vela-desmoldada@2x.webp 500w"
+            sizes="(max-width: 500px) 95vw, 500px"
           />
         </figure>
         <div className="col max-w-[500px]">
@@ -104,11 +118,15 @@ const Sobre = () => {
           </p>
         </div>
         <figure className="col">
-          <img
+          <Image
             className="w-[500px] pt-3 drop-shadow-lg rounded-lg"
             src="/images/thumb-sab-liq-intimo.webp"
             alt="Silvia apresentando linha de sabonetes líquidos íntimos artesanais"
             loading="lazy"
+            width={500}
+            height={350}
+            srcSet="/images/thumb-sab-liq-intimo.webp 250w, /images/thumb-sab-liq-intimo@2x.webp 500w"
+            sizes="(max-width: 500px) 95vw, 500px"
           />
         </figure>
       </section>

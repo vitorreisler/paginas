@@ -60,12 +60,12 @@ const Media = () => {
             })}
         </section>
 
-        <footer className="mt-4">
+        <div className="mt-4">
           <BotaoPadrao
             hrefLink={"https://www.youtube.com/@SilviaMonteiroArt"}
             texto={"Ir pro Canal"}
           />
-        </footer>
+        </div>
       </main>
     </>
   );

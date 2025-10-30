@@ -29,6 +29,8 @@ const GarantiaIncont = () => {
           width={800}
           height={600}
           priority={false}
+          srcSet="/images/garantia-vendas.webp 400w, /images/garantia-vendas@2x.webp 800w"
+          sizes="(max-width: 500px) 95vw, 800px"
         />
       </figure>
     </section>

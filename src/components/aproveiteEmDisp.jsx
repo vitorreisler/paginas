@@ -14,6 +14,8 @@ const AproveiteEmDisp = () => {
           width={200}
           height={200}
           priority={false}
+          srcSet="/images/devices.webp 100w, /images/devices@2x.webp 200w"
+          sizes="(max-width: 500px) 80vw, 200px"
         />
         <figcaption className="dm-serif-text-regular text-lg">
           Aproveite o conteúdo em qualquer dispositivo.

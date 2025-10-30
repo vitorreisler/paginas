@@ -14,6 +14,8 @@ const ReviewCard = ({ review, srcImg, name, datee }) => {
           alt={`Avatar de ${name}`}
           width={48}
           height={48}
+          srcSet={`${srcImg} 48w, ${srcImg.replace(".webp", "@2x.webp")} 96w`}
+          sizes="(max-width: 500px) 20vw, 48px"
         />
         <div>
           <p className="text-gray-900 font-semibold" itemProp="author">

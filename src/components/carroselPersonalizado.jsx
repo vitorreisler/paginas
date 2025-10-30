@@ -36,6 +36,11 @@ const CarroselPersonalizado = () => {
                   width={1200}
                   height={600}
                   className="w-full h-[250px] sm:h-[350px] md:h-[450px] object-cover rounded-lg"
+                  srcSet={`${item.srcImg} 600w, ${item.srcImg.replace(
+                    ".webp",
+                    "@2x.webp"
+                  )} 1200w`}
+                  sizes="(max-width: 500px) 95vw, 1200px"
                 />
                 <h1 className="absolute inset-0 flex items-center justify-center text-lg sm:text-2xl md:text-3xl font-bold text-white bg-black/40 text-center px-2 sm:px-4">
                   {item.textoDentro}

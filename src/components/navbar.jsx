@@ -54,7 +54,10 @@ const Navbar = () => {
               width={80}
               height={80}
               alt="Silvia Monteiro"
-              loading="lazy"
+              loading="eager"
+              priority={true}
+              srcSet="/images/foto-perfil.webp 80w, /images/foto-perfil.webp 160w"
+              sizes="(max-width: 500px) 60vw, 80px"
             />
           </Link>
         )}
@@ -117,7 +120,7 @@ const Navbar = () => {
               <li key={rota.nome} role="none">
                 <Link
                   href={rota.rota}
-                  className="block py-2 pl-3 pr-4 text-gray-300 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0 focus:outline-none focus:ring-2 focus:ring-gray-200 rounded-lg transition-colors duration-200"
+                  className="block py-2 pl-3 pr-4 text-gray-300 border-t border-gray-200 hover:bg-gray-50 hover:text-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0 focus:outline-none focus:ring-2 focus:ring-gray-200 rounded-lg transition-colors duration-200"
                   role="menuitem"
                   aria-current={rota.rota === "/" ? "page" : undefined}
                 >
