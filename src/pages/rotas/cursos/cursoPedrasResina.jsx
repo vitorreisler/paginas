@@ -34,7 +34,7 @@ const CursoPedrasResina = () => {
           href="https://seudominio.com/rotas/cursos/cursoPedrasResina"
         />
       </Head>
-
+ 
       <div className="flex flex-col text-center p-2 bg-[#e3d7bf] rounded-xl drop-shadow-lg">
         <ComponenteTextoFoto
           nomeCurso={
