@@ -37,7 +37,7 @@ const VideoTexto = ({ text = "", srcImg }) => {
   }, [srcImg]);
 
   return (
-    <div className="p-6 rounded-b-2xl shadow-md flex flex-wrap gap-4 justify-center items-center lg:justify-start">
+    <figure className="p-6 rounded-b-2xl shadow-md flex flex-wrap gap-4 justify-center items-center lg:justify-start">
       <div className="mx-auto">
         <video
           ref={videoRef}
@@ -48,12 +48,13 @@ const VideoTexto = ({ text = "", srcImg }) => {
           muted
           preload="none"
           controls={false}
+          aria-label="Vídeo demonstrativo"
         ></video>
       </div>
-      <div className="w-full lg:w-1/2">
+      <figcaption className="w-full lg:w-1/2">
         <p className="p-4 text-center">{text}</p>
-      </div>
-    </div>
+      </figcaption>
+    </figure>
   );
 };
 

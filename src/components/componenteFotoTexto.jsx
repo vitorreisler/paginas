@@ -9,8 +9,8 @@ const FotoTexto = ({
   altImg,
 }) => {
   return (
-    <div className="flex flex-wrap-reverse w-full bg-[#e3d7bf] justify-center lg:justify-between">
-      <div className="flex justify-center w-full lg:w-1/2 text-center my-2">
+    <article className="flex flex-wrap-reverse w-full bg-[#e3d7bf] justify-center lg:justify-between">
+      <figure className="flex justify-center w-full lg:w-1/2 text-center my-2">
         <Image
           className="drop-shadow-lg max-w-full h-auto lg:w-[75%]"
           src={srcImg}
@@ -18,8 +18,8 @@ const FotoTexto = ({
           width={800}
           height={600}
         />
-      </div>
-      <div className=" my-auto w-full lg:w-1/2 text-center px-3">
+      </figure>
+      <header className="my-auto w-full lg:w-1/2 text-center px-3">
         <div className="flex flex-col py-2">
           <h2 className="py-3 text-3xl md:text-5xl story-script-regular">
             {nomeCurso}
@@ -30,8 +30,8 @@ const FotoTexto = ({
           </h3>
           {linkPagPagamento && <BotaoPadrao hrefLink={linkPagPagamento} />}
         </div>
-      </div>
-    </div>
+      </header>
+    </article>
   );
 };
 
