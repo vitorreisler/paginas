@@ -1,17 +1,35 @@
+import Image from "next/image";
+
 const Sobre = () => {
   return (
-    <section className="flex flex-col">
-      <div className="flex flex-wrap gap-3 items-center justify-evenly">
-        <div className="col">
-          <img
+    <article
+      className="flex flex-col"
+      itemScope
+      itemType="http://schema.org/Person"
+    >
+      <h1 className="sr-only">
+        Sobre Silvia Monteiro - Artesã e Professora de Artesanato
+      </h1>
+
+      <section
+        className="flex flex-wrap gap-3 items-center justify-evenly"
+        aria-label="Introdução"
+      >
+        <figure className="col">
+          <Image
             className="w-[600px] drop-shadow-lg rounded-lg"
-            src="/images/thumb difusor varetas.png"
-            alt="silvia artesã com difusor de varetas"
+            src="/images/thumb-difusor-varetas.webp"
+            alt="Silvia demonstrando a criação de difusor de varetas"
             loading="lazy"
+            width={600}
+            height={400}
+            itemProp="image"
+            srcSet="/images/thumb-difusor-varetas.webp 300w, /images/thumb-difusor-varetas@2x.webp 600w"
+            sizes="(max-width: 500px) 95vw, 600px"
           />
-        </div>
-        <div className="col max-w-[500px] ">
-          <p className="py-3 dm-serif-text-regular">
+        </figure>
+        <div className="col max-w-[500px]">
+          <p className="py-3 dm-serif-text-regular" itemProp="description">
             Artesã e professora de artesanato, apaixonada por transformar
             matérias-primas simples em peças cheias de beleza, significado e
             bem-estar. Com mais de 10 anos de experiência na criação de
@@ -21,12 +39,15 @@ const Sobre = () => {
             personalizados.
           </p>
         </div>
-      </div>
+      </section>
       <hr />
 
-      <div className="flex flex-wrap-reverse gap-3 items-center justify-evenly">
+      <section
+        className="flex flex-wrap-reverse gap-3 items-center justify-evenly"
+        aria-label="Trajetória"
+      >
         <div className="col max-w-[500px]">
-          <p className="py-3 dm-serif-text-regular">
+          <p className="py-3 dm-serif-text-regular" itemProp="knowsAbout">
             Ao longo de sua trajetória, Silvia sempre acreditou que o artesanato
             é muito mais do que uma profissão — é uma forma de expressão, de
             terapia e de independência. Foi essa visão que a levou a ensinar e
@@ -34,28 +55,39 @@ const Sobre = () => {
             as próprias mãos.
           </p>
         </div>
-        <div className="col">
-          <img
+        <figure className="col">
+          <Image
             className="w-[500px] pt-3 drop-shadow-lg rounded-lg"
-            src="/images/thumb homespray.png"
-            alt="silvia artesã com home spray"
+            src="/images/thumb-homespray.webp"
+            alt="Silvia apresentando seu home spray artesanal"
             loading="lazy"
+            width={500}
+            height={350}
+            srcSet="/images/thumb-homespray.webp 250w, /images/thumb-homespray@2x.webp 500w"
+            sizes="(max-width: 500px) 95vw, 500px"
           />
-        </div>
-      </div>
+        </figure>
+      </section>
       <hr />
 
-      <div className="flex flex-wrap gap-3 items-center justify-evenly">
-        <div className="col py-3">
-          <img
+      <section
+        className="flex flex-wrap gap-3 items-center justify-evenly"
+        aria-label="Especialização"
+      >
+        <figure className="col py-3">
+          <Image
             className="w-[500px] drop-shadow-lg rounded-lg"
-            src="/images/vela desmoldada.png"
-            alt="silvia artesã com vela desmoldada"
+            src="/images/vela-desmoldada.webp"
+            alt="Silvia demonstrando o processo de desmoldagem de vela artesanal"
             loading="lazy"
+            width={500}
+            height={350}
+            srcSet="/images/vela-desmoldada.webp 250w, /images/vela-desmoldada@2x.webp 500w"
+            sizes="(max-width: 500px) 95vw, 500px"
           />
-        </div>
+        </figure>
         <div className="col max-w-[500px]">
-          <p className="py-3 dm-serif-text-regular">
+          <p className="py-3 dm-serif-text-regular" itemProp="description">
             Nos últimos 6 anos, ela se especializou na arte das velas
             aromáticas, desenvolvendo combinações únicas de essências, cores e
             formatos. Seu cuidado em cada detalhe — do derretimento da cera à
@@ -63,9 +95,13 @@ const Sobre = () => {
             e acabamento impecável.
           </p>
         </div>
-      </div>
+      </section>
       <hr />
-      <div className="flex flex-wrap-reverse gap-3 items-center justify-evenly">
+
+      <section
+        className="flex flex-wrap-reverse gap-3 items-center justify-evenly"
+        aria-label="Missão"
+      >
         <div className="col max-w-[500px]">
           <p className="py-3 dm-serif-text-regular">
             Hoje, Silvia dedica-se a compartilhar tudo o que aprendeu ao longo
@@ -81,16 +117,20 @@ const Sobre = () => {
             cria.
           </p>
         </div>
-        <div className="col">
-          <img
+        <figure className="col">
+          <Image
             className="w-[500px] pt-3 drop-shadow-lg rounded-lg"
-            src="/images/Thumb Sab liq Intimo.png"
-            alt="silvia artesã com sabonete líquido íntimo"
+            src="/images/thumb-sab-liq-intimo.webp"
+            alt="Silvia apresentando linha de sabonetes líquidos íntimos artesanais"
             loading="lazy"
+            width={500}
+            height={350}
+            srcSet="/images/thumb-sab-liq-intimo.webp 250w, /images/thumb-sab-liq-intimo@2x.webp 500w"
+            sizes="(max-width: 500px) 95vw, 500px"
           />
-        </div>
-      </div>
-    </section>
+        </figure>
+      </section>
+    </article>
   );
 };
 

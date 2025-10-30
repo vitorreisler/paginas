@@ -2,40 +2,44 @@ const GaleriaVideos = () => {
   const videos = [
     {
       titulo: "Video 1",
-      srcVideo: "1031.mp4",
+      srcVideo: "video-1031.mp4",
     },
     {
       titulo: "Video 2",
-      srcVideo: "videoSafari.mp4",
+      srcVideo: "video-safari.mp4",
     },
     {
       titulo: "Video 3",
-      srcVideo: "videoVelaGruta.mov",
+      srcVideo: "video-vela-gruta.mov",
     },
     {
       titulo: "Video 4",
-      srcVideo: "videoVelaDesmoldada.mov",
+      srcVideo: "video-vela-desmoldada.mov",
     },
   ];
   return (
-    <div className=" p-6 rounded-b-2xl shadow-md flex flex-wrap gap-4 justify-center items-center lg:justify-start ">
+    <section
+      className="p-6 rounded-b-2xl shadow-md flex flex-wrap gap-4 justify-center items-center lg:justify-start"
+      aria-label="Galeria de vídeos"
+    >
       {videos &&
         videos.length > 0 &&
-        videos.map(({ srcVideo }) => {
+        videos.map(({ titulo, srcVideo }) => {
           return (
-            <div key={srcVideo} className="mx-auto">
+            <figure key={srcVideo} className="mx-auto">
               <video
-                className=" shadow-md w-[100px] rounded-2xl lg:w-[180px] lg:rounded-4xl  "
+                className="shadow-md w-[100px] rounded-2xl lg:w-[180px] lg:rounded-4xl"
                 src={`/images/${srcVideo}`}
                 autoPlay
                 loop
                 muted
                 loading="lazy"
+                aria-label={titulo}
               />
-            </div>
+            </figure>
           );
         })}
-    </div>
+    </section>
   );
 };
 

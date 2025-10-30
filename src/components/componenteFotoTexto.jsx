@@ -1,3 +1,6 @@
+import BotaoPadrao from "./botaoPadrao";
+import Image from "next/image";
+
 const FotoTexto = ({
   nomeCurso,
   breveDescricao,
@@ -6,16 +9,19 @@ const FotoTexto = ({
   altImg,
 }) => {
   return (
-    <div className="flex flex-wrap-reverse w-full bg-[#e3d7bf] justify-center lg:justify-between">
-      <div className="flex justify-center w-full lg:w-1/2 text-center my-2">
-        <img
+    <article className="flex flex-wrap-reverse w-full bg-[#e3d7bf] justify-center lg:justify-between">
+      <figure className="flex justify-center w-full lg:w-1/2 text-center my-2">
+        <Image
           className="drop-shadow-lg max-w-full h-auto lg:w-[75%]"
           src={srcImg}
           alt={altImg}
-          loading="lazy"
+          width={800}
+          height={600}
+          srcSet={`${srcImg} 400w, ${srcImg.replace(".webp", "@2x.webp")} 800w`}
+          sizes="(max-width: 500px) 95vw, 800px"
         />
-      </div>
-      <div className=" my-auto w-full lg:w-1/2 text-center px-3">
+      </figure>
+      <header className="my-auto w-full lg:w-1/2 text-center px-3">
         <div className="flex flex-col py-2">
           <h2 className="py-3 text-3xl md:text-5xl story-script-regular">
             {nomeCurso}
@@ -26,8 +32,8 @@ const FotoTexto = ({
           </h3>
           {linkPagPagamento && <BotaoPadrao hrefLink={linkPagPagamento} />}
         </div>
-      </div>
-    </div>
+      </header>
+    </article>
   );
 };
 

@@ -1,3 +1,6 @@
+import Link from "next/link";
+import Image from "next/image";
+
 const Card = ({
   rotaProCurso,
   srcImg,
@@ -13,18 +16,22 @@ const Card = ({
       itemScope
       itemType="https://schema.org/Course"
     >
-      <a
+      <Link
         href={`/rotas/cursos/${rotaProCurso}`}
         className="block"
         itemProp="url"
         aria-label={descricaoCurso}
       >
-        <img
+        <Image
           className="object-cover w-full h-32 sm:h-40 md:h-48"
           src={srcImg}
-          alt={descricaoCurso}
+          alt={`Imagem do curso ${tituloCurso} - ${descricaoCurso}`}
           itemProp="image"
           loading="lazy"
+          width={320}
+          height={200}
+          srcSet={`${srcImg} 320w, ${srcImg.replace(".webp", "@2x.webp")} 640w`}
+          sizes="(max-width: 500px) 90vw, 320px"
         />
         <div className="px-3 sm:px-4 pt-2 pb-1">
           <h2
@@ -68,7 +75,7 @@ const Card = ({
             </span>
           )}
         </div>
-      </a>
+      </Link>
     </article>
   );
 };
