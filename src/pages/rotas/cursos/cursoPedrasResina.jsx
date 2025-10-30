@@ -27,11 +27,11 @@ const CursoPedrasResina = () => {
         />
         <meta
           property="og:image"
-          content="https://seudominio.com/images/cursoPedrasCover.png"
+          content="https://cursossilvia.vercel.app/images/cursoPedrasCover.png"
         />
         <link
           rel="canonical"
-          href="https://seudominio.com/rotas/cursos/cursoPedrasResina"
+          href="https://cursossilvia.vercel.app/rotas/cursos/cursoPedrasResina"
         />
       </Head>
   
