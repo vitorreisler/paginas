@@ -37,7 +37,7 @@ const VideoTexto = ({ text = "", srcImg }) => {
   }, [srcImg]);
 
   return (
-    <figure className="p-6 rounded-b-2xl shadow-md flex flex-wrap gap-4 justify-center items-center lg:justify-start">
+    <figure className="p-6  shadow-md flex flex-wrap gap-4 justify-center items-center lg:justify-start">
       <div className="mx-auto">
         <video
           ref={videoRef}
