@@ -53,7 +53,7 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://cursossilvia.vercel.app/images/cover.jpg"
+          content="https://cursossilvia.vercel.app/images/curso-pedras.webp"
         />
         <meta property="og:url" content="https://cursossilvia.vercel.app/" />
         <meta property="og:site_name" content="By Silvia Monteiro" />
@@ -70,7 +70,7 @@ export default function Home() {
         />
         <meta
           name="twitter:image"
-          content="https://cursossilvia.vercel.app/images/cover.jpg"
+          content="https://cursossilvia.vercel.app/images/curso-pedras.webp"
         />
 
         <link rel="canonical" href="https://cursossilvia.vercel.app/" />
@@ -91,8 +91,8 @@ export default function Home() {
                 "query-input": "required name=search_term_string",
               },
               sameAs: [
-                "https://instagram.com/bysilviam",
-                "https://facebook.com/bysilviamonteiro",
+                "https://www.instagram.com/silviamonteiro.art/",
+                "https://www.facebook.com/silvia.santos.18400700",
               ],
               offers: [
                 {
@@ -111,12 +111,12 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className="text-4xl font-bold mb-6 text-center">
+        <h1 className="text-3xl md:text-5xl font-bold mb-6 text-center story-script-regular">
           Artesanato em Resina e Velas Artesanais | By Silvia Monteiro
         </h1>
 
         <div className="text-center mb-8 max-w-2xl mx-auto">
-          <p className="text-lg text-gray-700 mb-4">
+          <p className="text-lg text-gray-700 mb-4 dm-serif-text-regular ">
             Descubra a arte do artesanato em resina e velas artesanais.
             Oferecemos cursos online completos e peças exclusivas feitas à mão
             com técnicas profissionais e materiais de alta qualidade.
@@ -128,10 +128,10 @@ export default function Home() {
         </section>
 
         <section aria-label="Portfólio" className="mt-8">
-          <h2 className="text-center story-script-regular text-4xl bg-[#e3d7bf] rounded-t-2xl mb-6">
+          <h2 className="text-center story-script-regular text-4xl md:text-5xl bg-[#e3d7bf] rounded-t-2xl mb-6">
             Trabalhos Artesanais Exclusivos
           </h2>
-          <p className="text-center text-lg mb-8 max-w-3xl mx-auto px-4">
+          <p className="text-center text-lg mb-8 max-w-3xl mx-auto px-4 dm-serif-text-regular">
             Cada peça é cuidadosamente criada com atenção aos detalhes e
             técnicas artesanais aperfeiçoadas. Confira nossa seleção de velas
             decorativas, peças em resina e itens personalizados.
@@ -144,7 +144,7 @@ export default function Home() {
           <div className="flex flex-wrap-reverse w-full bg-[#e3d7bf] justify-center lg:justify-between">
             <div className="my-auto w-full lg:w-1/2 text-center px-3">
               <div className="flex flex-col py-2">
-                <h3 className="py-3 text-xl md:text-xl">
+                <h3 className="py-3 text-xl md:text-xl dm-serif-text-regular">
                   Linhas Completas Exclusivas
                 </h3>
               </div>
@@ -170,7 +170,7 @@ export default function Home() {
           <div className="flex flex-wrap w-full bg-[#e3d7bf] justify-center lg:justify-between">
             <div className="my-auto w-full lg:w-1/2 text-center px-3">
               <div className="flex flex-col py-2">
-                <h3 className="py-3 text-xl md:text-xl">
+                <h3 className="py-3 text-xl md:text-xl dm-serif-text-regular ">
                   Linhas Completas Exclusivas
                 </h3>
               </div>
