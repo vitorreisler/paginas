@@ -39,28 +39,11 @@ const Navbar = () => {
   ];
   return (
     <nav className="border-gray-200">
-      <div className="flex flex-wrap items-center justify-between  px-4 mx-auto ">
-        {isSmallScreen ? (
-          <span className="flex text-gray-100 gap-1 py-3">
+      <div className="flex flex-wrap items-center justify-between py-3  px-4 mx-auto ">
+        <span className="flex text-gray-100 gap-1 py-3 pl-20 w-1/3">
             BySilviaMonteiro
           </span>
-        ) : (
-          <Link
-            href="/"
-            className="flex items-center rounded-3xl overflow-hidden  "
-          >
-            <Image
-              src="/images/foto-perfil.webp"
-              width={80}
-              height={80}
-              alt="Silvia Monteiro"
-              loading="eager"
-              priority={true}
-              srcSet="/images/foto-perfil.webp 80w, /images/foto-perfil.webp 160w"
-              sizes="(max-width: 500px) 60vw, 80px"
-            />
-          </Link>
-        )}
+       
 
         <div className="flex items-center lg:order-2">
           <div className="hidden mt-2 mr-4 sm:inline-block">
