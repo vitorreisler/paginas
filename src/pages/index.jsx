@@ -128,7 +128,7 @@ export default function Home() {
         </section>
 
         <section aria-label="Portfólio" className="mt-8">
-          <h2 className="text-center story-script-regular text-4xl md:text-5xl bg-[#e3d7bf] rounded-t-2xl mb-6">
+          <h2 className="text-center py-4 story-script-regular text-4xl md:text-5xl bg-[#e3d7bf] rounded-t-2xl mb-6">
             Trabalhos Artesanais Exclusivos
           </h2>
           <p className="text-center text-lg mb-8 max-w-3xl mx-auto px-4 dm-serif-text-regular">
