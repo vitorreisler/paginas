@@ -17,6 +17,8 @@ const FotoTexto = ({
           alt={altImg}
           width={800}
           height={600}
+          srcSet={`${srcImg} 400w, ${srcImg.replace(".webp", "@2x.webp")} 800w`}
+          sizes="(max-width: 500px) 95vw, 800px"
         />
       </figure>
       <header className="my-auto w-full lg:w-1/2 text-center px-3">
