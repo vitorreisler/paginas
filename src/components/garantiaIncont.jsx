@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const GarantiaIncont = () => {
   return (
     <div className="flex flex-wrap-reverse py-3 w-full bg-[#e3d7bf] justify-center lg:justify-between">
@@ -17,11 +19,13 @@ const GarantiaIncont = () => {
       </div>
 
       <div className="flex justify-center w-full lg:w-1/2 text-center my-2">
-        <img
+        <Image
           className="drop-shadow-lg max-w-full h-auto lg:w-[65%]"
           src="/images/garantia-vendas.webp"
-          alt="Curso de Artesanato com Pedras e Resina"
-          loading="lazy"
+          alt="Garantia de 7 dias - Devolução do dinheiro garantida"
+          width={800}
+          height={600}
+          priority={false}
         />
       </div>
     </div>
