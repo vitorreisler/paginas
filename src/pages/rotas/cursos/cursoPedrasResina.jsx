@@ -46,7 +46,7 @@ const CursoPedrasResina = () => {
         <div>
           <h2 className="text-4xl p-3 md:text-6xl story-script-regular bg-[#e5e3d8] ">
             Você vai aprender
-          </h2>
+          </h2> 
           <ul className="py-3 px-8 text-lg bg-[#e3d7bf] text-start dm-serif-text-regular list-disc">
             <li className="py-1">
               Como preparar e trabalhar com resina e pedras naturais passo a
