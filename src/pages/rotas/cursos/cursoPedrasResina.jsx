@@ -35,7 +35,6 @@ const CursoPedrasResina = () => {
         />
       </Head>
 
-<<<<<<< HEAD
       <div className="flex flex-col my-3">
         <div>
           <h2 className="text-4xl p-3 md:text-6xl story-script-regular bg-[#e5e3d8]">
@@ -100,7 +99,6 @@ const CursoPedrasResina = () => {
           </ul>
         </div>
       </div>
-=======
       <div className="flex flex-col text-center p-2 bg-[#e3d7bf] rounded-xl drop-shadow-lg">
         <ComponenteTextoFoto
           nomeCurso={
@@ -115,7 +113,6 @@ const CursoPedrasResina = () => {
           srcImg={"/images/curso-pedras-2.webp"}
           altImg={"Curso de Artesanato com Pedras e Resina"}
         />
->>>>>>> 2ce857f3f3011c1ad504e20fd12fd3040debfd4a
 
         <div className="flex flex-col my-3">
           <div>
