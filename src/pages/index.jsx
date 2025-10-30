@@ -22,7 +22,7 @@ export default function Home() {
         />
         <link rel="dns-prefetch" href="https://cursossilvia.vercel.app/" />
         {/* Preload Google Fonts for faster rendering */}
-        <link
+        <link 
           as="style"
           href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:wght@400;700&family=Story+Script&display=swap"
         />
