@@ -50,7 +50,7 @@ const CursoPedrasResina = () => {
           altImg={"Curso de Artesanato com Pedras e Resina"}
         />
 
-        <div className="flex flex-col my-3">
+        <div className="flex flex-col my-3"> 
           <div>
             <h2 className="text-4xl p-3 md:text-6xl story-script-regular bg-[#e5e3d8]">
               Sobre o conteúdo
