@@ -9,18 +9,21 @@ const VideoTexto = ({ text = "", srcImg }) => {
 
     let observer;
     if (typeof IntersectionObserver !== "undefined") {
-      observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            if (!videoEl.src) {
-              videoEl.src = `/images/${videoEl.dataset.src}`;
-              videoEl.load();
-              videoEl.play().catch(() => {});
+      observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              if (!videoEl.src) {
+                videoEl.src = `/images/${videoEl.dataset.src}`;
+                videoEl.load();
+                videoEl.play().catch(() => {});
+              }
+              observer.unobserve(videoEl);
             }
-            observer.unobserve(videoEl);
-          }
-        });
-      }, { threshold: 0.25 });
+          });
+        },
+        { threshold: 0.25 }
+      );
 
       observer.observe(videoEl);
     } else {

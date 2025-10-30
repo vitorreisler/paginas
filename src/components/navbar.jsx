@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 
 const Navbar = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const checkScreenSize = () => {
@@ -64,18 +65,20 @@ const Navbar = () => {
           </div>
 
           <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
             data-collapse-toggle="mobile-menu-2"
             type="button"
             className="inline-flex items-center p-2 ml-1 text-sm text-gray-100 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
             aria-controls="mobile-menu-2"
-            aria-expanded="true"
+            aria-expanded={isMenuOpen}
+            aria-label="Abrir menu de navegação"
           >
-            <span className="sr-only">Open main menu</span>
             <svg
-              className="w-6 h-6"
+              className={`w-6 h-6 ${isMenuOpen ? "hidden" : "block"}`}
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
               <path
                 fillRule="evenodd"
@@ -84,10 +87,11 @@ const Navbar = () => {
               ></path>
             </svg>
             <svg
-              className="hidden w-6 h-6"
+              className={`w-6 h-6 ${isMenuOpen ? "block" : "hidden"}`}
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
               <path
                 fillRule="evenodd"
@@ -98,15 +102,24 @@ const Navbar = () => {
           </button>
         </div>
         <div
-          className="items-center justify-between w-full lg:flex lg:w-auto lg:order-1"
+          className={`items-center justify-between w-full lg:flex lg:w-auto lg:order-1 ${
+            isMenuOpen ? "block" : "hidden"
+          }`}
           id="mobile-menu-2"
+          role="navigation"
+          aria-label="Menu principal"
         >
-          <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+          <ul
+            className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0"
+            role="menubar"
+          >
             {rotas.map((rota) => (
-              <li key={rota.nome}>
+              <li key={rota.nome} role="none">
                 <Link
                   href={rota.rota}
-                  className="block py-2 pl-3 pr-4 text-gray-300 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0 "
+                  className="block py-2 pl-3 pr-4 text-gray-300 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0 focus:outline-none focus:ring-2 focus:ring-gray-200 rounded-lg transition-colors duration-200"
+                  role="menuitem"
+                  aria-current={rota.rota === "/" ? "page" : undefined}
                 >
                   {rota.nome}
                 </Link>

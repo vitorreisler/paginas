@@ -1,25 +1,28 @@
-const fs = require('fs');
-const path = require('path');
-const sharp = require('sharp');
+const fs = require("fs");
+const path = require("path");
+const sharp = require("sharp");
 
-const imagesDir = path.join(__dirname, '..', 'public', 'images');
+const imagesDir = path.join(__dirname, "..", "public", "images");
 
-const exts = ['.jpg', '.jpeg', '.png'];
+const exts = [".jpg", ".jpeg", ".png"];
 
 async function convertFile(filePath) {
   const ext = path.extname(filePath).toLowerCase();
-  const outPath = filePath.replace(ext, '.webp');
+  const outPath = filePath.replace(ext, ".webp");
   if (fs.existsSync(outPath)) {
-    console.log('Skipping (exists):', outPath);
+    console.log("Skipping (exists):", outPath);
     return;
   }
   try {
-    await sharp(filePath)
-      .webp({ quality: 80 })
-      .toFile(outPath);
-    console.log('Converted:', path.basename(filePath), '->', path.basename(outPath));
+    await sharp(filePath).webp({ quality: 80 }).toFile(outPath);
+    console.log(
+      "Converted:",
+      path.basename(filePath),
+      "->",
+      path.basename(outPath)
+    );
   } catch (err) {
-    console.error('Error converting', filePath, err.message);
+    console.error("Error converting", filePath, err.message);
   }
 }
 
@@ -39,8 +42,10 @@ async function walkAndConvert(dir) {
   }
 }
 
-walkAndConvert(imagesDir).then(() => {
-  console.log('Done.');
-}).catch((err) => {
-  console.error('Failed:', err);
-});
+walkAndConvert(imagesDir)
+  .then(() => {
+    console.log("Done.");
+  })
+  .catch((err) => {
+    console.error("Failed:", err);
+  });
