@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Sitemap: https://seudominio.com/sitemap.xml
+Sitemap: https://cursossilvia.vercel.app/sitemap.xml
 
 # Permitir rastreamento de todas as páginas importantes
 Allow: /rotas/cursos

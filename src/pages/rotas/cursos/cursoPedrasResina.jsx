@@ -27,16 +27,15 @@ const CursoPedrasResina = () => {
         />
         <meta
           property="og:image"
-          content="https://seudominio.com/images/cursoPedrasCover.png"
+          content="https://cursossilvia.vercel.app/images/cursoPedrasCover.png"
         />
         <link
           rel="canonical"
-          href="https://seudominio.com/rotas/cursos/cursoPedrasResina"
+          href="https://cursossilvia.vercel.app/rotas/cursos/cursoPedrasResina"
         />
       </Head>
 
       <div className="flex flex-col my-3">
-      
         {/* Seção de foto e compra */}
         <div className="text-center p-2 bg-[#e3d7bf] rounded-xl drop-shadow-lg my-6">
           <ComponenteTextoFoto
@@ -47,7 +46,7 @@ const CursoPedrasResina = () => {
             altImg="Curso de Artesanato com Pedras e Resina"
           />
         </div>
-          {/* Seção de apresentação */}
+        {/* Seção de apresentação */}
         <div>
           <h2 className="text-4xl text-center p-3 md:text-6xl story-script-regular bg-[#e5e3d8]">
             Sobre o conteúdo
@@ -80,7 +79,8 @@ const CursoPedrasResina = () => {
               passo;
             </li>
             <li className="py-1">
-              Técnicas para criar velas artesanais pilar com acabamento perfeito;
+              Técnicas para criar velas artesanais pilar com acabamento
+              perfeito;
             </li>
             <li className="py-1">
               Ideias criativas de decoração com resina que valorizam qualquer
@@ -113,8 +113,6 @@ const CursoPedrasResina = () => {
             <li className="py-1">Aprenda a trabalhar com Folhas de Ouro.</li>
           </ul>
         </div>
-
-        
 
         {/* Depoimentos */}
         {reviewData && reviewData.length > 0 && (
@@ -167,9 +165,7 @@ const CursoPedrasResina = () => {
             />
           </div>
 
-          <BotaoPadrao
-            hrefLink="https://pay.hotmart.com/U102469342X?off=frwzmpjz&hotfeature=51&_hi=eyJjaWQiOiIxNzU5MjM2ODA5MTE5ODI1ODExMjE2MjU0MDU2NjAwIiwiYmlkIjoiMTc1OTIzNjgwOTExOTgyNTgxMTIxNjI1NDA1NjYwMCIsInNpZCI6IjRjZTNkOTllNGI1MjQ2OWJhN2UzYjk1Yzk2YWJiNWM0In0=.1761582950625"
-          />
+          <BotaoPadrao hrefLink="https://pay.hotmart.com/U102469342X?off=frwzmpjz&hotfeature=51&_hi=eyJjaWQiOiIxNzU5MjM2ODA5MTE5ODI1ODExMjE2MjU0MDU2NjAwIiwiYmlkIjoiMTc1OTIzNjgwOTExOTgyNTgxMTIxNjI1NDA1NjYwMCIsInNpZCI6IjRjZTNkOTllNGI1MjQ2OWJhN2UzYjk1Yzk2YWJiNWM0In0=.1761582950625" />
         </div>
 
         {/* Garantia e FAQ */}
