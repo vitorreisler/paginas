@@ -5,7 +5,6 @@ export default function Document() {
     <Html lang="pt-BR">
       <Head>
         <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -14,7 +13,7 @@ export default function Document() {
           crossOrigin="true"
         />
 
-        <link
+        <Document
           href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Story+Script&display=swap"
           rel="stylesheet"
         />
