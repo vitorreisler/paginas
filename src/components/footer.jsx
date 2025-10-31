@@ -37,6 +37,11 @@ const Footer = () => {
               Media
             </Link>
           </li>
+          <li>
+            <Link href="/rotas/produtos-recomendados" className="hover:underline me-4 md:me-6">
+              Produtos-recomendados
+            </Link>
+          </li>
         </ul>
       </div>
     </footer>

@@ -40,8 +40,7 @@ export const produtosRecomendadosData = [
     href: "https://s.shopee.com.br/qbJs2nNtw",
     srcImg:
       "https://down-br.img.susercontent.com/file/br-11134201-23020-oq1fp8w39inv86.webp",
-    titulo:
-      "Maquina Cortadora de Garrafa Vidro Elétrica 2 Resistencia",
+    titulo: "Maquina Cortadora de Garrafa Vidro Elétrica 2 Resistencia",
     categoria: "variados",
     plataforma: shopeeLogo,
   },
@@ -50,8 +49,7 @@ export const produtosRecomendadosData = [
     href: "https://s.shopee.com.br/6KwGQQhVeK",
     srcImg:
       "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mbqz21pqwg2hf5.webp",
-    titulo:
-      "Soprador Térmico Ar Quente 1500/2000w 300 À 550°c - Razi",
+    titulo: "Soprador Térmico Ar Quente 1500/2000w 300 À 550°c - Razi",
     categoria: "variados",
     plataforma: shopeeLogo,
   },
@@ -60,8 +58,7 @@ export const produtosRecomendadosData = [
     href: "https://s.shopee.com.br/8KhKo7ZYnA",
     srcImg:
       "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m62xd4n36w1e60.webp",
-    titulo:
-      "Fogão De Mesa Elétrico Elgin Double Cook 2 Bocas 2000w",
+    titulo: "Fogão De Mesa Elétrico Elgin Double Cook 2 Bocas 2000w",
     categoria: "variados",
     plataforma: shopeeLogo,
   },
@@ -80,8 +77,7 @@ export const produtosRecomendadosData = [
     href: "https://s.shopee.com.br/9zpYnEwnkl",
     srcImg:
       "https://down-br.img.susercontent.com/file/br-11134207-7qukw-ljzq5jrw8mtm66@resize_w900_nl.webp",
-    titulo:
-      "Termômetro Digital Infravermelho",
+    titulo: "Termômetro Digital Infravermelho",
     categoria: "variados",
     plataforma: shopeeLogo,
   },
@@ -90,8 +86,7 @@ export const produtosRecomendadosData = [
     href: "https://s.shopee.com.br/6fZ6p8zst9",
     srcImg:
       "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lyavu0xxvs2t5e.webp",
-    titulo:
-      "Kit Bequer becker de vidro Tamanhos Variados",
+    titulo: "Kit Bequer becker de vidro Tamanhos Variados",
     categoria: "variados",
     plataforma: shopeeLogo,
   },

@@ -1,8 +1,8 @@
 const CardProduto = ({href, srcImg, titulo, categoria = "sem categoria", plataforma }) => {
   return (
- <div className="max-w-xs mx-auto bg-white rounded-2xl shadow-md p-4 flex flex-col items-center hover:shadow-lg transition-shadow duration-300">
+ <div className="max-w-xs mx-auto bg-white rounded-2xl shadow-md p-4 flex flex-col items-center hover:shadow-lg hover:scale-105 transition duration-300">
   <a className="relative" href={href} target="_blank" rel="noopener noreferrer">
-    <img className="absolute max-w-7 left-21 bottom-23 md:max-w-8 md:left-30 md:bottom-29 rounded-xl " src={plataforma} alt="" />
+    <img className="absolute max-w-7 left-21 bottom-23 md:max-w-8 md:left-30 md:bottom-29 rounded-xl " src={plataforma} alt="logo da plataforma" />
       <img
         src={srcImg}
         alt={titulo}
