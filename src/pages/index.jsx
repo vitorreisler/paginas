@@ -1,7 +1,7 @@
 import Head from "next/head";
-import CarroselPersonalizado from "@/components/carroselPersonalizado";
-import VideoTexto from "@/components/componenteVideoTexto";
-import GaleriaVideos from "@/components/galeriaVidos";
+import CarroselPersonalizado from "@/components/ui/carroselPersonalizado";
+import VideoTexto from "@/components/ui/componenteVideoTexto";
+import GaleriaVideos from "@/components/ui/galeriaVidos";
 import Image from "next/image";
 
 export default function Home() {

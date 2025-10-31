@@ -1,5 +1,5 @@
 import Head from "next/head";
-import BotaoPadrao from "@/components/botaoPadrao";
+import BotaoPadrao from "@/components/ui/botaoPadrao";
 import { youtubeData } from "@/data/youtubeData";
 
 const Media = () => {

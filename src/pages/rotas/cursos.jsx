@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Card from "@/components/card";
+import CardCurso from "@/components/card-curso";
 import { cursosData } from "@/data/cursosData";
 
 const Cursos = () => {
@@ -42,7 +42,7 @@ const Cursos = () => {
           role="list"
         >
           {cursosData.map((curso, index) => (
-            <Card
+            <CardCurso
               key={index}
               rotaProCurso={curso.rotaProCurso}
               srcImg={curso.srcImg}

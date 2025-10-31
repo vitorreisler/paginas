@@ -1,9 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
 import AproveiteEmDisp from "@/components/aproveiteEmDisp";
-import BotaoPadrao from "@/components/botaoPadrao";
-import ComponenteTextoFoto from "@/components/componenteTextoFoto";
-import GarantiaIncont from "@/components/garantiaIncont";
+import BotaoPadrao from "@/components/ui/botaoPadrao";
+import ComponenteTextoFoto from "@/components/ui/componenteTextoFoto";
+import GarantiaIncont from "@/components/ui/garantiaIncont";
 import PerguntasFAQSection from "@/components/perguntasFAQ";
 import ReviewSection from "@/components/reviewSection";
 import { reviewData } from "@/data/reviewData";

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-const Card = ({
+const CardCurso = ({
   rotaProCurso,
   srcImg,
   tituloCurso,
@@ -80,4 +80,4 @@ const Card = ({
   );
 };
 
-export default Card;
+export default CardCurso;
