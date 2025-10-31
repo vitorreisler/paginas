@@ -3,8 +3,8 @@ import { produtosRecomendadosData } from "@/data/produtosRecomendadosData";
 
 const ProdutosRecomendados = () => {
   return (
-    <div className="flex flex-col items-center">
-      <h2>Produtos Recomendados</h2>
+    <div className="flex flex-col items-center drop-shadow-md">
+      <h2 className="w-full text-center text-3xl mb-3 rounded-t-2xl  p-4 md:text-5xl bg-[#e3d7bf]  story-script-regular">Produtos Recomendados</h2>
       <div className="grid grid-cols-2 md:flex md:flex-wrap md:justify-center gap-4">
         {produtosRecomendadosData &&
           produtosRecomendadosData.length > 1 &&

@@ -10,7 +10,7 @@ const CardProduto = ({href, srcImg, titulo, categoria = "sem categoria", platafo
       />
   </a>
 
-  <h2 className="text-gray-800 font-semibold text-xs text-center mb-3">
+  <h2 className="text-gray-800 font-semibold text-xs  text-center mb-3">
     {titulo && titulo.length > 25 ? `${titulo.slice(0, 25)}...` : titulo}
   </h2>
 
