@@ -33,7 +33,7 @@ export const produtosRecomendadosData = [
     titulo:
       "Cera De Coco Para Velas Aromáticas 100% Vegetal Vegana - Solven 1 Kg",
     categoria: "velas",
-    plataforma: mercadoLivreLogo,
+    plataforma: shopeeLogo,
   },
   {
     id: uuidv4(),
