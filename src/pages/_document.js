@@ -13,7 +13,7 @@ export default function Document() {
           crossOrigin="true"
         />
 
-        <Document
+        <link
           href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Story+Script&display=swap"
           rel="stylesheet"
         />
