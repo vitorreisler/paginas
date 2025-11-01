@@ -3,7 +3,7 @@ export const dataFAQ = [
     id: 1,
     titulo: "Para quem é esse produto?",
     resposta:
-      "Artesãs(os), que amam trabalhos manuais e querem aprender com profissionalismo a técnica pilar e gruta",
+      "Artesãs(os), que amam trabalhos manuais e querem aprender com profissionalismo de forma fácil e prática.",
   },
   {
     id: 2,

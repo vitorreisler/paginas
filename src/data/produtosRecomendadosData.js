@@ -1,15 +1,13 @@
 import { v4 as uuidv4 } from "uuid";
 
 {
-  /*    {
-    id: uuidv4(),
-    href: "https://s.shopee.com.br/6Kvgs9fOx0?share_channel_code=1",
-    srcImg:
-      "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mfzk22gm7g913c.webp",
-    titulo: "Noteworthy technology acquisitions 2021",
-    categoria: "cosmeticos",
-    plataforma: "/images/shopee-logo.webp",
-  }, */
+ /*
+  CATEGORIAS
+  - cosmeticos
+  - velas
+  - variados
+  - vidros
+  */
 }
 
 const shopeeLogo = "/images/shopee-logo.webp";
@@ -21,7 +19,7 @@ export const produtosRecomendadosData = [
     href: "https://s.shopee.com.br/2VjXrJov1o",
     srcImg:
       "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mfzk22gm7g913c.webp",
-    titulo: "Noteworthy technology acquisitions 2021",
+    titulo: "Álcool de Cereais",
     categoria: "cosmeticos",
     plataforma: shopeeLogo,
   },
@@ -89,5 +87,23 @@ export const produtosRecomendadosData = [
     titulo: "Kit Bequer becker de vidro Tamanhos Variados",
     categoria: "variados",
     plataforma: shopeeLogo,
+  },
+  {
+    id: uuidv4(),
+    href: "https://s.shopee.com.br/AKSQZk96Zm",
+    srcImg:
+      "https://down-br.img.susercontent.com/file/br-11134201-7r98o-m79mvdcxfhkic2.webp",
+    titulo: "Vidro Square 250ml Aromatizador de Ambiente",
+    categoria: "vidros",
+    plataforma: shopeeLogo,
+  },
+  {
+    id: uuidv4(),
+    href: "https://mercadolivre.com/sec/1RzbjbK",
+    srcImg:
+      "https://http2.mlstatic.com/D_NQ_NP_2X_642315-MLB87167495180_072025-F-fco-vidro-transparente-cilindrico-240ml-rosca-28410-picolo.webp",
+    titulo: " Vidro Transparente Cilíndrico 240ml Rosca 28/410",
+    categoria: "vidros",
+    plataforma: mercadoLivreLogo,
   },
 ];

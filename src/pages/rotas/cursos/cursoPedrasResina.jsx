@@ -7,6 +7,7 @@ import GarantiaIncont from "@/components/ui/garantiaIncont";
 import PerguntasFAQSection from "@/components/perguntasFAQ";
 import ReviewSection from "@/components/reviewSection";
 import { reviewData } from "@/data/reviewData";
+import GaleriaVideos from "@/components/ui/galeriaVidos";
 
 const CursoPedrasResina = () => {
   return (
@@ -128,6 +129,12 @@ const CursoPedrasResina = () => {
 
         {/* Aproveite em qualquer dispositivo */}
         <AproveiteEmDisp />
+
+
+
+        <GaleriaVideos categoriaParaMostrar={"velas-resina"} />
+        
+
 
         {/* Seção de Preço e Compra */}
         <div className="w-full flex flex-col justify-center px-1 py-3 mt-8 mx-auto bg-[#e5e3d8]">

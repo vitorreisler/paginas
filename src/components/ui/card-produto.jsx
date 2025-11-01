@@ -2,15 +2,16 @@ const CardProduto = ({href, srcImg, titulo, categoria = "sem categoria", platafo
   return (
  <div className="max-w-xs mx-auto bg-white rounded-2xl shadow-md p-4 flex flex-col items-center hover:shadow-lg hover:scale-105 transition duration-300">
   <a className="relative" href={href} target="_blank" rel="noopener noreferrer">
-    <img className="absolute max-w-7 left-21 bottom-23 md:max-w-8 md:left-30 md:bottom-29 rounded-xl " src={plataforma} alt="logo da plataforma" />
+    <img loading="lazy" className="absolute max-w-7 left-21 bottom-23 md:max-w-8 md:left-30 md:bottom-29 rounded-xl " src={plataforma} alt="logo da plataforma" />
       <img
         src={srcImg}
         alt={titulo}
+        loading="lazy"
         className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-xl object-cover mb-3"
       />
   </a>
 
-  <h2 className="text-gray-800 font-semibold text-xs  text-center mb-3">
+  <h2 title={`${titulo}`} className="text-gray-800 font-semibold text-xs  text-center mb-3">
     {titulo && titulo.length > 25 ? `${titulo.slice(0, 25)}...` : titulo}
   </h2>
 

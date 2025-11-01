@@ -1,7 +1,6 @@
 import Head from "next/head";
 import CarroselPersonalizado from "@/components/ui/carroselPersonalizado";
 import VideoTexto from "@/components/ui/componenteVideoTexto";
-import GaleriaVideos from "@/components/ui/galeriaVidos";
 import Image from "next/image";
 
 export default function Home() {
@@ -22,7 +21,7 @@ export default function Home() {
         />
         <link rel="dns-prefetch" href="https://cursossilvia.vercel.app/" />
         {/* Preload Google Fonts for faster rendering */}
-        <link 
+        <link
           as="style"
           href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:wght@400;700&family=Story+Script&display=swap"
         />
@@ -87,7 +86,8 @@ export default function Home() {
               url: "https://cursossilvia.vercel.app/",
               potentialAction: {
                 "@type": "SearchAction",
-                target: "https://cursossilvia.vercel.app/search?q={search_term_string}",
+                target:
+                  "https://cursossilvia.vercel.app/search?q={search_term_string}",
                 "query-input": "required name=search_term_string",
               },
               sameAs: [
@@ -136,10 +136,19 @@ export default function Home() {
             técnicas artesanais aperfeiçoadas. Confira nossa seleção de velas
             decorativas, peças em resina e itens personalizados.
           </p>
+
+
+
+
+
+
+
+
+          
           {/*<GaleriaVideos />*/}
           <VideoTexto
             text="Velas estilizadas sob encomenda."
-            srcImg={"video-1031.mp4"}
+            srcImg={"video-vela-cristais.mp4"}
           />
           <div className="flex flex-wrap-reverse w-full bg-[#e3d7bf] justify-center lg:justify-between">
             <div className="my-auto w-full lg:w-1/2 text-center px-3">
@@ -167,22 +176,22 @@ export default function Home() {
             srcImg={"video-safari.mp4"}
           />
 
-          <div className="flex flex-wrap w-full bg-[#e3d7bf] justify-center lg:justify-between">
+          <div className="flex flex-wrap-reverse w-full bg-[#e3d7bf] justify-center lg:justify-between">
             <div className="my-auto w-full lg:w-1/2 text-center px-3">
               <div className="flex flex-col py-2">
                 <h3 className="py-3 text-xl md:text-xl dm-serif-text-regular ">
-                  Linhas Completas Exclusivas
+                  Produtos Únicos e Personalizados
                 </h3>
               </div>
             </div>
             <div className="flex justify-center w-full lg:w-1/2 text-center my-2 p-4">
               <Image
-                className="drop-shadow-lg max-w-full h-auto lg:w-[60%] rounded-xl"
-                src="/images/linha-vanilla.webp"
+                className="drop-shadow-lg max-w-full h-auto lg:w-[40%] scale-140  rounded-xl"
+                src="/images/sab-liq-decalque.webp"
                 alt="Linha Vanilla - Coleção exclusiva de velas artesanais com fragrância natural de baunilha"
                 width={1200}
                 height={800}
-                srcSet="/images/linha-vanilla.webp 600w, /images/linha-vanilla@2x.webp 1200w"
+                srcSet="/images/sab-liq-decalque.webp 600w, /images/sab-liq-decalque@2x.webp 1200w"
                 sizes="(max-width: 500px) 95vw, 1200px"
               />
             </div>
