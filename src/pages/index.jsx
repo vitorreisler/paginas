@@ -2,6 +2,7 @@ import Head from "next/head";
 import CarroselPersonalizado from "@/components/ui/carroselPersonalizado";
 import VideoTexto from "@/components/ui/componenteVideoTexto";
 import Image from "next/image";
+import CardHome from "@/components/card-home";
 
 export default function Home() {
   return (
@@ -137,64 +138,28 @@ export default function Home() {
             decorativas, peças em resina e itens personalizados.
           </p>
 
-
-
-
-
-
-
-
-          
-          {/*<GaleriaVideos />*/}
-          <VideoTexto
-            text="Velas estilizadas sob encomenda."
-            srcImg={"video-vela-cristais.mp4"}
-          />
-          <div className="flex flex-wrap-reverse w-full bg-[#e3d7bf] justify-center lg:justify-between">
-            <div className="my-auto w-full lg:w-1/2 text-center px-3">
-              <div className="flex flex-col py-2">
-                <h3 className="py-3 text-xl md:text-xl dm-serif-text-regular">
-                  Linhas Completas Exclusivas
-                </h3>
-              </div>
-            </div>
-
-            <div className="flex justify-center w-full lg:w-1/2 text-center my-2 p-4">
-              <Image
-                className="drop-shadow-lg max-w-full h-auto lg:w-[60%] rounded-xl"
-                src="/images/linha-gentleman.webp"
-                alt="Linha Gentleman - Velas artesanais premium com aroma sofisticado e acabamento elegante"
-                width={1200}
-                height={800}
-                srcSet="/images/linha-gentleman.webp 600w, /images/linha-gentleman@2x.webp 1200w"
-                sizes="(max-width: 500px) 95vw, 1200px"
-              />
-            </div>
-          </div>
-          <VideoTexto
-            text="Sabonetes de lembrancinha "
-            srcImg={"video-safari.mp4"}
-          />
-
-          <div className="flex flex-wrap-reverse w-full bg-[#e3d7bf] justify-center lg:justify-between">
-            <div className="my-auto w-full lg:w-1/2 text-center px-3">
-              <div className="flex flex-col py-2">
-                <h3 className="py-3 text-xl md:text-xl dm-serif-text-regular ">
-                  Produtos Únicos e Personalizados
-                </h3>
-              </div>
-            </div>
-            <div className="flex justify-center w-full lg:w-1/2 text-center my-2 p-4">
-              <Image
-                className="drop-shadow-lg max-w-full h-auto lg:w-[40%] scale-140  rounded-xl"
-                src="/images/sab-liq-decalque.webp"
-                alt="Linha Vanilla - Coleção exclusiva de velas artesanais com fragrância natural de baunilha"
-                width={1200}
-                height={800}
-                srcSet="/images/sab-liq-decalque.webp 600w, /images/sab-liq-decalque@2x.webp 1200w"
-                sizes="(max-width: 500px) 95vw, 1200px"
-              />
-            </div>
+          <div className="grid place-items-center md:grid-cols-3 gap-5 md:gap-3 py-5 bg-[#aa6238] ">
+            <CardHome
+              srcImg={"/images/video-vela-gruta.mov"}
+              titulo={"Vela Gruta Nossa Senhora"}
+              descricao={
+                "Vela Gruta Nossa Senhora - Peça artesanal em resina com detalhes realistas e acabamento impecável."
+              }
+            />
+            <CardHome
+              srcImg={"/images/video-safari.mp4"}
+              titulo={"Sabonetes Temáticos"}
+              descricao={
+                "Sabonetes Temáticos - Sabonetes artesanais com design exclusivo, perfeitos para lembrancinhas e presentes."
+              }
+            />
+            <CardHome
+              srcImg={"/images/video-vela-desmoldada.mov"}
+              titulo={"Vela Desmoldada"}
+              descricao={
+                "Vela Desmoldada - Vela artesanal com design exclusivo, feita à mão com cera de alta qualidade."
+              }
+            />
           </div>
         </section>
       </main>
