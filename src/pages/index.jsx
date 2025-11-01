@@ -132,13 +132,13 @@ export default function Home() {
           <h2 className="text-center py-4 story-script-regular text-4xl md:text-5xl bg-[#e3d7bf] rounded-t-2xl mb-6">
             Trabalhos Artesanais Exclusivos
           </h2>
-          <p className="text-center text-lg mb-8 max-w-3xl mx-auto px-4 dm-serif-text-regular">
+          <p className="text-center text-shadow-sm text-lg mb-8 max-w-3xl mx-auto px-4 dm-serif-text-regular">
             Cada peça é cuidadosamente criada com atenção aos detalhes e
             técnicas artesanais aperfeiçoadas. Confira nossa seleção de velas
             decorativas, peças em resina e itens personalizados.
           </p>
 
-          <div className="grid place-items-center md:grid-cols-3 gap-5 md:gap-3 py-5 bg-[#aa6238] ">
+          <div className="grid place-items-center md:grid-cols-3 gap-5 md:gap-3 py-10 bg-[#e3d7bf] drop-shadow-lg rounded-xl">
             <CardHome
               srcImg={"/images/video-vela-gruta.mov"}
               titulo={"Vela Gruta Nossa Senhora"}
