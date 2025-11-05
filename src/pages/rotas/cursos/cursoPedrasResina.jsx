@@ -7,7 +7,7 @@ import GarantiaIncont from "@/components/ui/garantiaIncont";
 import PerguntasFAQSection from "@/components/perguntasFAQ";
 import ReviewSection from "@/components/reviewSection";
 import { reviewData } from "@/data/reviewData";
-import GaleriaVideosFotos from "@/components/ui/galeriaVidos";
+import GaleriaVideosFotos from "@/components/ui/galeriaVideos";
 
 const CursoPedrasResina = () => {
   return (
@@ -130,11 +130,10 @@ const CursoPedrasResina = () => {
         {/* Aproveite em qualquer dispositivo */}
         <AproveiteEmDisp />
 
-
-
-        <GaleriaVideosFotos categoriaParaMostrar={"velas-resina"} cursoParaMostrar={"curso-pedras-resina"}  />
-        
-
+        <GaleriaVideosFotos
+          categoriaParaMostrar={"velas-resina"}
+          cursoParaMostrar={"curso-pedras-resina"}
+        />
 
         {/* Seção de Preço e Compra */}
         <div className="w-full flex flex-col justify-center px-1 py-3 mt-8 mx-auto bg-[#e5e3d8]">
