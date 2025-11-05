@@ -4,6 +4,11 @@ export default function Document() {
   return (
     <Html lang="pt-BR">
       <Head>
+          <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-43QS3EYYCV', { page_path: window.location.pathname });`,
+          }}
+        />
         <meta charSet="utf-8" />
         {/* Resource hints to improve performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -101,11 +106,7 @@ export default function Document() {
             }),
           }}
         />
-          <script
-          dangerouslySetInnerHTML={{
-            __html: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-43QS3EYYCV', { page_path: window.location.pathname });`,
-          }}
-        />
+        
       </Head>
 
       <body className="antialiased">
