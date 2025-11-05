@@ -7,7 +7,7 @@ import GarantiaIncont from "@/components/ui/garantiaIncont";
 import PerguntasFAQSection from "@/components/perguntasFAQ";
 import ReviewSection from "@/components/reviewSection";
 import { reviewData } from "@/data/reviewData";
-import GaleriaVideosFotos from "@/components/ui/galeriaVideos";
+import GaleriaVideosFotos from "@/components/ui/galeriaVideosFotos";
 
 const CursoPedrasResina = () => {
   return (

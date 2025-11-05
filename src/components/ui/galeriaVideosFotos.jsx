@@ -12,7 +12,10 @@ const GaleriaVideosFotos = ({ categoriaParaMostrar, cursoParaMostrar }) => {
       aria-label="Galeria de vídeos"
     >
       {GaleriaVideosData?.filter(
-        (item) => item.categoria === categoriaParaMostrar && item.tipo === "video" && item.curso === cursoParaMostrar
+        (item) =>
+          item.categoria === categoriaParaMostrar &&
+          item.tipo === "video" &&
+          item.curso === cursoParaMostrar
       ).map(({ id, titulo, srcVideo }) => (
         <figure key={id} className="flex justify-center">
           <video
@@ -24,11 +27,13 @@ const GaleriaVideosFotos = ({ categoriaParaMostrar, cursoParaMostrar }) => {
             loading="lazy"
             aria-label={titulo}
           />
-          
         </figure>
       ))}
       {GaleriaVideosData?.filter(
-        (item) => item.categoria === categoriaParaMostrar && item.tipo === "imagem" && item.curso === cursoParaMostrar
+        (item) =>
+          item.categoria === categoriaParaMostrar &&
+          item.tipo === "imagem" &&
+          item.curso === cursoParaMostrar
       ).map(({ id, titulo, srcVideo }) => (
         <figure key={id} className="flex justify-center">
           <Image
@@ -42,7 +47,6 @@ const GaleriaVideosFotos = ({ categoriaParaMostrar, cursoParaMostrar }) => {
             width={1200}
             height={600}
           />
-          
         </figure>
       ))}
     </section>
