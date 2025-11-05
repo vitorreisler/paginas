@@ -1,19 +1,18 @@
-import Head from "next/head";
 import CarroselPersonalizado from "@/components/ui/carroselPersonalizado";
 import CardHome from "@/components/card-home";
 
 export default function Home() {
   return (
     <>
-      <title>By Silvia Monteiro — Artesanato, Velas e Cursos Artesanais</title>
+      <title>By Silvia Monteiro — Comséticos Artesanais, Velas e Cursos Artesanais</title>
       <main>
         <h1 className="text-3xl md:text-5xl font-bold mb-6 text-center story-script-regular">
-          Artesanato em Resina e Velas Artesanais | By Silvia Monteiro
+          Cosméticos Artesanais, Velas Artesanais, Peças Exclusivas <br /> | By Silvia Monteiro
         </h1>
 
         <div className="text-center mb-8 max-w-2xl mx-auto">
           <p className="text-lg text-gray-700 mb-4 dm-serif-text-regular ">
-            Descubra a arte do artesanato em resina e velas artesanais.
+            Descubra a arte dos cosméticos artesanais, artesanato com resina e velas artesanais.
             Oferecemos cursos online completos e peças exclusivas feitas à mão
             com técnicas profissionais e materiais de alta qualidade.
           </p>
