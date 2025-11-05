@@ -1,6 +1,7 @@
 import { GaleriaVideosData } from "@/data/galeriaVideosData";
+import Image from "next/image";
 
-const GaleriaVideos = ({ categoriaParaMostrar }) => {
+const GaleriaVideosFotos = ({ categoriaParaMostrar, cursoParaMostrar }) => {
   return (
     <section
       className="
@@ -11,7 +12,7 @@ const GaleriaVideos = ({ categoriaParaMostrar }) => {
       aria-label="Galeria de vídeos"
     >
       {GaleriaVideosData?.filter(
-        (item) => item.categoria === categoriaParaMostrar
+        (item) => item.categoria === categoriaParaMostrar && item.tipo === "video" && item.curso === cursoParaMostrar
       ).map(({ id, titulo, srcVideo }) => (
         <figure key={id} className="flex justify-center">
           <video
@@ -23,10 +24,29 @@ const GaleriaVideos = ({ categoriaParaMostrar }) => {
             loading="lazy"
             aria-label={titulo}
           />
+          
+        </figure>
+      ))}
+      {GaleriaVideosData?.filter(
+        (item) => item.categoria === categoriaParaMostrar && item.tipo === "imagem" && item.curso === cursoParaMostrar
+      ).map(({ id, titulo, srcVideo }) => (
+        <figure key={id} className="flex justify-center">
+          <Image
+            className="shadow-md w-[120px] rounded-2xl lg:w-[250px] lg:rounded-4xl"
+            src={`/images/${srcVideo}`}
+            autoPlay
+            loop
+            muted
+            loading="lazy"
+            aria-label={titulo}
+            width={1200}
+            height={600}
+          />
+          
         </figure>
       ))}
     </section>
   );
 };
 
-export default GaleriaVideos;
+export default GaleriaVideosFotos;

@@ -7,7 +7,7 @@ import GarantiaIncont from "@/components/ui/garantiaIncont";
 import PerguntasFAQSection from "@/components/perguntasFAQ";
 import ReviewSection from "@/components/reviewSection";
 import { reviewData } from "@/data/reviewData";
-import GaleriaVideos from "@/components/ui/galeriaVidos";
+import GaleriaVideosFotos from "@/components/ui/galeriaVidos";
 
 const CursoPedrasResina = () => {
   return (
@@ -132,7 +132,7 @@ const CursoPedrasResina = () => {
 
 
 
-        <GaleriaVideos categoriaParaMostrar={"velas-resina"} />
+        <GaleriaVideosFotos categoriaParaMostrar={"velas-resina"} cursoParaMostrar={"curso-pedras-resina"}  />
         
 
 
