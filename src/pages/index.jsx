@@ -5,13 +5,6 @@ import Head from "next/head";
 export default function Home() {
   return (
     <>
-    <Head>
-         <script
-          dangerouslySetInnerHTML={{
-            __html: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-43QS3EYYCV', { page_path: window.location.pathname });`,
-          }}
-        />
-    </Head>
       <title>By Silvia Monteiro — Comséticos Artesanais, Velas e Cursos Artesanais</title>
       <main>
         <h1 className="text-3xl md:text-5xl font-bold mb-6 text-center story-script-regular">
