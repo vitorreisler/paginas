@@ -32,12 +32,13 @@ const CarroselPersonalizado = () => {
               <CarouselItem key={item.id} className="relative">
                 <div className="relative w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px]">
                   <Image
+                    fetchPriority="high"
                     src={item.srcImg}
                     alt={item.textoDentro || "Imagem da galeria"}
                     fill
                     className="object-cover rounded-lg"
-                    loading={item.id === 1 ? "eager" : "lazy"} // Carrega o 1º slide imediatamente para melhorar o LCP
-                    priority={item.id === 1} // Sinaliza para o Next otimizar ainda mais o LCP
+                    loading="eager"
+                    priority={item.id === 1}
                     sizes="
       (max-width: 640px) 100vw,
       (max-width: 1024px) 90vw,

@@ -1,8 +1,9 @@
 import CarroselPersonalizado from "@/components/ui/carroselPersonalizado";
 import CardHome from "@/components/card-home";
-import Head from "next/head";
+
 
 export default function Home() {
+
   return (
     <>
       <title>By Silvia Monteiro — Comséticos Artesanais, Velas e Cursos Artesanais</title>
