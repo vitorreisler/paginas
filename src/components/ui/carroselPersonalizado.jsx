@@ -30,18 +30,21 @@ const CarroselPersonalizado = () => {
             {/* Slides  */}
             {carroselData.map((item) => (
               <CarouselItem key={item.id} className="relative">
-                <Image
-                  src={item.srcImg}
-                  alt={item.textoDentro}
-                  width={1200}
-                  height={600}
-                  className="w-full h-[250px] sm:h-[350px] md:h-[450px] object-cover rounded-lg"
-                  srcSet={`${item.srcImg} 600w, ${item.srcImg.replace(
-                    ".webp",
-                    "@2x.webp"
-                  )} 1200w`}
-                  sizes="(max-width: 500px) 95vw, 1200px"
-                />
+                <div className="relative w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px]">
+                  <Image
+                    src={item.srcImg}
+                    alt={item.textoDentro || "Imagem da galeria"}
+                    fill
+                    className="object-cover rounded-lg"
+                    loading={item.id === 1 ? "eager" : "lazy"} // Carrega o 1º slide imediatamente para melhorar o LCP
+                    priority={item.id === 1} // Sinaliza para o Next otimizar ainda mais o LCP
+                    sizes="
+      (max-width: 640px) 100vw,
+      (max-width: 1024px) 90vw,
+      50vw
+    "
+                  />
+                </div>
                 <h1 className="absolute inset-0 flex items-center justify-center text-lg sm:text-2xl md:text-3xl font-bold text-white bg-black/40 text-center px-2 sm:px-4">
                   {item.textoDentro}
                 </h1>
