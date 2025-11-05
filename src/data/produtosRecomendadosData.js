@@ -99,6 +99,46 @@ export const produtosRecomendadosData = [
   },
   {
     id: uuidv4(),
+    href: "https://s.shopee.com.br/Lf9foxYuW",
+    srcImg:
+      "https://down-br.img.susercontent.com/file/sg-11134201-7rdy8-lzw5cdu5i0x41d.webp",
+    titulo: "Kit 50/100 Un Saco Saquinho Organza Tule Saquinho 7x9 10x15 20x30",
+    categoria: "variados",
+    plataforma: shopeeLogo,
+  },
+  {
+    id: uuidv4(),
+    href: "https://s.shopee.com.br/9fCon72jAa",
+    srcImg:
+      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-ln9cscp6bwsk55.webp",
+    titulo: "100un Saco Transparente Sem Aba Plástico Cristal Embalagem Roupa Qualidade Várias Medidas",
+    categoria: "variados",
+    plataforma: shopeeLogo,
+  },
+  {
+    id: uuidv4(),
+    href: "https://s.shopee.com.br/8zx7zzKVfb",
+    srcImg:
+      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lxze3rl8bdtr9f.webp",
+    titulo: "Flores de Alfazema(Lavanda)Desidratada",
+    categoria: "variados",
+    plataforma: shopeeLogo,
+  },
+  {
+    id: uuidv4(),
+    href: "https://s.shopee.com.br/BLjTtoQuQ",
+    srcImg:
+      "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mfya1j6j6pz9a1.webp",
+    titulo: "Tina Escalda Pés Bacia de Pé",
+    categoria: "variados",
+    plataforma: shopeeLogo,
+  },
+
+
+
+
+  {
+    id: uuidv4(),
     href: "https://mercadolivre.com/sec/1RzbjbK",
     srcImg:
       "https://http2.mlstatic.com/D_NQ_NP_2X_642315-MLB87167495180_072025-F-fco-vidro-transparente-cilindrico-240ml-rosca-28410-picolo.webp",
