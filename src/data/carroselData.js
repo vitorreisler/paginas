@@ -1,4 +1,5 @@
 export const carroselData = [
+  
   {
     id: "1",
     srcImg: "/images/curso-pedras.webp",
@@ -6,7 +7,8 @@ export const carroselData = [
   },
   {
     id: "2",
-    srcImg: "/images/curso-pedras.webp",
-    textoDentro: "XYZ",
+    srcImg: "/images/banner-oficina-presencial-natal.webp",
+    textoDentro: "Oficinas Presenciais",
   },
+
 ];

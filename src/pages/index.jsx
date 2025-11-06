@@ -8,12 +8,12 @@ export default function Home() {
     <>
       <title>By Silvia Monteiro — Comséticos Artesanais, Velas e Cursos Artesanais</title>
       <main>
-        <h1 className="text-3xl md:text-5xl font-bold mb-6 text-center story-script-regular">
+        <h1 className={`text-3xl md:text-5xl font-bold mb-6 text-center story-script-regular `} >
           Cosméticos Artesanais, Velas Artesanais, Peças Exclusivas <br /> | By Silvia Monteiro
         </h1>
 
         <div className="text-center mb-8 max-w-2xl mx-auto">
-          <p className="text-lg text-gray-700 mb-4 dm-serif-text-regular ">
+          <p className="text-lg text-gray-700 mb-4 dm-serif-text-regular  ">
             Descubra a arte dos cosméticos artesanais, artesanato com resina e velas artesanais.
             Oferecemos cursos online completos e peças exclusivas feitas à mão
             com técnicas profissionais e materiais de alta qualidade.

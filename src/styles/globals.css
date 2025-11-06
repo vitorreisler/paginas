@@ -1,7 +1,10 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-
+@theme inline {
+  --story-script-regular:var(--story-script-regular);
+  --dm-serif-text:var(--dm-serif-text);
+}
 
 .story-script-regular {
   font-family: "Story Script", sans-serif;

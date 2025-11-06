@@ -24,7 +24,7 @@ export default function Document() {
           }}
         />
         <meta charSet="utf-8" />
-        {/* Resource hints to improve performance */}
+        {/*
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -32,17 +32,12 @@ export default function Document() {
           crossOrigin=""
         />
         <link rel="dns-prefetch" href="https://cursossilvia.vercel.app/" />
-        {/* Preload Google Fonts for faster rendering */}
-        <link
-          as="style"
-          href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:wght@400;700&family=Story+Script&display=swap"
-        />
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:wght@400;700&family=Story+Script&display=swap"
           media="all"
         />
-
+        */}
         <meta
           name="description"
           content="Cursos de artesanato, velas artesanais e peças exclusivas em resina. Aprenda técnicas profissionais de artesanato com Silvia Monteiro. Aulas online, kits completos e suporte personalizado."

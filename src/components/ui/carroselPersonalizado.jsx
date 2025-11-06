@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState, useEffect } from "react";
 import { carroselData } from "@/data/carroselData";
 import {
   Carousel,
@@ -10,10 +10,10 @@ import {
 import Image from "next/image";
 
 const CarroselPersonalizado = () => {
-  const [currentSlide, setCurrentSlide] = React.useState(0);
-  const [emblaApi, setEmblaApi] = React.useState(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [emblaApi, setEmblaApi] = useState(null);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (emblaApi) {
       emblaApi.on("select", () => {
         setCurrentSlide(emblaApi.selectedScrollSnap());
@@ -23,37 +23,38 @@ const CarroselPersonalizado = () => {
 
   return (
     <div className="relative px-2 sm:px-6 md:px-10">
-      {/* Container principal do carrossel */}
       {carroselData && carroselData.length > 0 && (
         <Carousel setApi={setEmblaApi}>
           <CarouselContent>
-            {/* Slides  */}
             {carroselData.map((item) => (
               <CarouselItem key={item.id} className="relative">
-                <div className="relative w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px]">
+                {/* 
+                  🔹 Usa aspect-ratio para manter proporção consistente e evitar reflow
+                  🔹 fill + sizes otimizados para reduzir download da imagem
+                */}
+                <div className="relative w-full aspect-[16/9]">
                   <Image
-                    fetchPriority="high"
                     src={item.srcImg}
                     alt={item.textoDentro || "Imagem da galeria"}
                     fill
                     className="object-cover rounded-lg"
-                    loading="eager"
                     priority={item.id === 1}
-                    sizes="
-      (max-width: 640px) 100vw,
-      (max-width: 1024px) 90vw,
-      50vw
-    "
+                    loading={item.id === 1 ? "eager" : "lazy"}
+                    fetchPriority={item.id === 1 ? "high" : "auto"}
+                    sizes="100vw"
                   />
                 </div>
-                <h1 className="absolute inset-0 flex items-center justify-center text-lg sm:text-2xl md:text-3xl font-bold text-white bg-black/40 text-center px-2 sm:px-4">
-                  {item.textoDentro}
-                </h1>
+
+                {item.textoDentro && (
+                  <h1 className="absolute inset-0 flex items-center justify-center text-lg sm:text-2xl md:text-3xl font-bold text-white bg-black/40 text-center px-2 sm:px-4">
+                    {item.textoDentro}
+                  </h1>
+                )}
               </CarouselItem>
             ))}
           </CarouselContent>
 
-          {/* Setas laterais centralizadas */}
+          {/* Botões laterais */}
           <CarouselPrevious
             className="absolute left-1 sm:left-2 top-1/2 -translate-y-1/2 z-20 bg-white/70 hover:bg-white text-gray-800 rounded-full p-1 sm:p-2 transition duration-200 shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-200"
             aria-label="Slide anterior"
@@ -63,7 +64,7 @@ const CarroselPersonalizado = () => {
             aria-label="Próximo slide"
           />
 
-          {/* Indicadores de posição */}
+          {/* Indicadores */}
           <div
             className="absolute bottom-4 left-0 right-0 flex justify-center gap-2"
             role="tablist"
