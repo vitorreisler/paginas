@@ -34,3 +34,8 @@ nav, footer {
 content:"🫧";
 font-size: 1.2em;
 }
+
+.lista-receita-sabonete-mel li::marker{
+  content:"🍯";
+  font-size: 1.2em;
+}
