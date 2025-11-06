@@ -2,14 +2,10 @@ export const carroselData = [
   
   {
     id: "1",
-    srcImg: "/images/curso-pedras-menor.webp",
+    srcImg: "/images/curso-pedras-media.webp",
     textoDentro: "Curso de Artesanato com Pedras e Resina",
   },
-  {
-    id: "3",
-    srcImg: "/images/curso-pedras-media.webp",
-    textoDentro: "MEDIA",
-  },
+ 
   {
     id: "2",
     srcImg: "/images/banner-oficina-presencial-natal.webp",
