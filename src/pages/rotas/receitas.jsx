@@ -1,5 +1,5 @@
 import CardHome from "@/components/card-home";
-import { receitasData } from "@/data/receitasData";
+import { receitasDataCard } from "@/data/receitasDataCard";
 
 const Receitas = () => {
   return (
@@ -21,9 +21,9 @@ const Receitas = () => {
         .
       </span>
       <div className="grid grid-cols-2 md:flex md:flex-wrap md:justify-center gap-4">
-        {receitasData &&
-          receitasData.length > 0 &&
-          receitasData.map(
+        {receitasDataCard &&
+          receitasDataCard.length > 0 &&
+          receitasDataCard.map(
             ({
               fotoCardReceita,
               rotaDaReceita,

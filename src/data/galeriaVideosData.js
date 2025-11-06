@@ -43,6 +43,14 @@ export const GaleriaVideosData = [
   },
   {
     id: uuidv4(),
+    srcVideo: "kit-pedras-resina.webp",
+    titulo: "kit fundo do mar",
+    categoria: "velas-resina",
+    tipo: "imagem",
+    curso: "curso-pedras-resina",
+  },
+  {
+    id: uuidv4(),
     srcVideo: "vela-pilar-fundo-do-mar.webp",
     titulo: "vela pilar fundo do mar",
     categoria: "velas-resina",
