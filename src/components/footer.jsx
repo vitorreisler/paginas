@@ -42,6 +42,11 @@ const Footer = () => {
               Produtos-recomendados
             </Link>
           </li>
+          <li>
+            <Link href="/rotas/receitas" className="hover:underline me-4 md:me-6">
+              Receitas
+            </Link>
+          </li>
         </ul>
       </div>
     </footer>

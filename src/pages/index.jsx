@@ -41,6 +41,7 @@ export default function Home() {
               descricao={
                 "Vela Gruta Nossa Senhora - Peça artesanal em resina com detalhes realistas e acabamento impecável."
               }
+              tipo={"video"}
             />
             <CardHome
               srcImg={"/images/video-safari.mp4"}
@@ -48,6 +49,7 @@ export default function Home() {
               descricao={
                 "Sabonetes Temáticos - Sabonetes artesanais com design exclusivo, perfeitos para lembrancinhas e presentes."
               }
+              tipo={"video"}
             />
             <CardHome
               srcImg={"/images/video-vela-desmoldada.mov"}
@@ -55,6 +57,7 @@ export default function Home() {
               descricao={
                 "Vela Desmoldada - Vela artesanal com design exclusivo, feita à mão com cera de alta qualidade."
               }
+              tipo={"video"}
             />
           </div>
         </section>

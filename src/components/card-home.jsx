@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const CardHome = ({
   srcImg,
   titulo,
@@ -5,6 +7,7 @@ const CardHome = ({
   hashtag1,
   hashtag2,
   hashtag3,
+  tipo,
 }) => {
   return (
     <article
@@ -12,7 +15,7 @@ const CardHome = ({
       itemScope
       itemType="https://schema.org/Course"
     >
-        <video
+        {tipo === "video" ?  (<video
           className="object-cover w-full h-32 sm:h-40 md:h-48"
           src={srcImg}
           alt={` ${titulo} - ${descricao}`}
@@ -24,7 +27,16 @@ const CardHome = ({
           muted
           autoPlay
           loop
-        />
+        />) : (
+        <Image 
+        src={srcImg}
+        alt={titulo}
+        width={320}
+        height={200}
+
+        /> )}
+
+       
         <div className="px-3 sm:px-4 pt-2 pb-1">
           <h2
             className="font-bold text-base sm:text-lg mb-1 leading-tight"

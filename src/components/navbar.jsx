@@ -39,6 +39,10 @@ const Navbar = () => {
       nome: "Produtos Recomendados",
       rota: `${rota}/produtos-recomendados`,
     },
+    {
+      nome: "Receitas",
+      rota: `${rota}/receitas`,
+    },
   ];
   return (
     <nav className="border-gray-200">

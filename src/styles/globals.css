@@ -30,3 +30,7 @@ nav, footer {
     background-color: #9a5833;
 }
 
+.lista-receita-sabonete li::marker{
+content:"🫧";
+font-size: 1.2em;
+}
