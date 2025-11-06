@@ -32,7 +32,7 @@ const CarroselPersonalizado = () => {
                   🔹 Usa aspect-ratio para manter proporção consistente e evitar reflow
                   🔹 fill + sizes otimizados para reduzir download da imagem
                 */}
-                <div className="relative w-full aspect-[16/9]">
+                <div className="relative w-full aspect-video">
                   <Image
                     src={item.srcImg}
                     alt={item.textoDentro || "Imagem da galeria"}
