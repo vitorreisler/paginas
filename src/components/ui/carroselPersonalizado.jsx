@@ -46,7 +46,7 @@ const CarroselPersonalizado = () => {
                 </div>
 
                 {item.textoDentro && (
-                  <a href={item.redirecionaPara}>
+                  <a href={item.redirecionaPara} rel="noopener noreferrer">
                     <h1 className="absolute inset-0 flex items-center justify-center text-sm md:text-3xl font-bold text-white bg-black/40 text-center px-2 sm:px-4">
                       {item.textoDentro}
                     </h1>
