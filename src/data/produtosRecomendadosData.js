@@ -25,6 +25,15 @@ export const produtosRecomendadosData = [
   },
   {
     id: uuidv4(),
+    href: "https://s.shopee.com.br/2VjnEmmpfc",
+    srcImg:
+      "https://down-br.img.susercontent.com/file/br-11134201-23020-2d1193h87lnv46.webp",
+    titulo: "Extrato de Mel",
+    categoria: "cosmeticos",
+    plataforma: shopeeLogo,
+  },
+  {
+    id: uuidv4(),
     href: "https://s.shopee.com.br/7pl4D93PRP",
     srcImg:
       "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m7trgyy38qwy3b.webp",

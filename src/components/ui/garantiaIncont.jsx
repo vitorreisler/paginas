@@ -26,7 +26,7 @@ const GarantiaIncont = () => {
           className="drop-shadow-lg max-w-full h-auto lg:w-[65%]"
           src="/images/garantia-vendas.webp"
           alt="Garantia de 7 dias - Devolução do dinheiro garantida"
-          width={800}
+          width={300}
           height={600}
           priority={false}
           srcSet="/images/garantia-vendas.webp 400w, /images/garantia-vendas@2x.webp 800w"

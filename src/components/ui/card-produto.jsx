@@ -6,7 +6,7 @@ const CardProduto = ({
   plataforma,
 }) => {
   return (
-    <div className="max-w-xs mx-auto bg-white rounded-2xl shadow-md p-4 flex flex-col items-center hover:shadow-lg hover:scale-105 transition duration-300">
+    <div className="max-w-xs mx-auto bg-white rounded-2xl shadow-md p-4 md:p-6 flex flex-col items-center hover:shadow-lg hover:scale-105 transition duration-300">
       <a
         className="relative"
         href={href}

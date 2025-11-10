@@ -136,8 +136,8 @@ const CursoPedrasResina = () => {
         />
 
         {/* Seção de Preço e Compra */}
-        <div className="w-full flex flex-col justify-center px-1 py-3 mt-8 mx-auto bg-[#e5e3d8]">
-          <div className="flex flex-row justify-between items-center gap-3 mb-3 border border-black">
+        <div className="w-full flex flex-col justify-center items-center px-1 py-3 my-8 bg-[#e5e3d8] drop-shadow-2xl rounded-2xl">
+          <div className="flex flex-row justify-between items-center gap-3 mb-3 ">
             <Image
               className="drop-shadow-xl hidden lg:inline"
               src="/images/vela-pilar-metade.webp"
@@ -151,7 +151,7 @@ const CursoPedrasResina = () => {
                 Por apenas
               </p>
               <Image
-                className="mx-auto md:max-w-[400px] drop-shadow-xl"
+                className="mx-auto md:max-w-[300px] drop-shadow-xl"
                 src="/images/placa-preco.webp"
                 alt="preço curso pedras e resina"
                 width={400}
