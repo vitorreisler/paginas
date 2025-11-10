@@ -60,7 +60,7 @@ const HomeSpray = () => {
           temperatura ambiente por 1 dia. Repita esse ciclo mais três vezes — 3
           dias no congelador, 1 dia fora.<br /><br /> 💫 E pronto! Seu difusor de aromas
           estará macerado e com o perfume muito mais intenso, equilibrado e
-          duradouro.
+          duradouro. 
         </p>
       </section>
 
