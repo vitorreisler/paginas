@@ -9,7 +9,7 @@ const TabelaPrecificacao = () => {
     >
       <figure className="col">
         <Image
-          className="w-[600px] drop-shadow-lg rounded-lg"
+          className="w-[800px] drop-shadow-lg rounded-lg"
           src="/images/tabela-precificacao.webp"
           alt="Tabela de precificacao"
           loading="lazy"
@@ -28,7 +28,7 @@ const TabelaPrecificacao = () => {
           de venda, consegue crescer com segurança e profissionalismo — sem
           trabalhar “no prejuízo”. <br /> <br />
           Baixe gratuitamente nossa Tabela de Precificação e descubra quanto
-          realmente vale o seu artesanato!
+          realmente vale o seu artesanato! <br /> Video explicativo na pagina de mídia.
         </p>
         <BotaoPadrao hrefLink={"https://visil1628.hotmart.host/planilhapreco"} texto={"Receber planilha"} />
       </div>

@@ -33,8 +33,8 @@ const Footer = () => {
             </Link>
           </li>
           <li>
-            <Link href="/rotas/media" className="hover:underline me-4 md:me-6">
-              Media
+            <Link href="/rotas/midia" className="hover:underline me-4 md:me-6">
+              Mídia
             </Link>
           </li>
           <li>

@@ -32,8 +32,8 @@ const Navbar = () => {
     },
 
     {
-      nome: "Media",
-      rota: `${rota}/media`,
+      nome: "Mídia",
+      rota: `${rota}/midia`,
     },
     {
       nome: "Produtos Recomendados",
