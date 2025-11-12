@@ -42,7 +42,7 @@ const CursoPedrasResina = () => {
           <ComponenteTextoFoto
             nomeCurso="Curso de Artesanato com Pedras e Resina: Domine a Arte de Criar Peças Únicas e Lucrativas"
             breveDescricao="Transforme suas ideias em peças que encantam e busque sucesso no mundo do artesanato com pedras e resina."
-            linkPagPagamento="https://pay.hotmart.com/U102469342X?off=frwzmpjz&hotfeature=51&_hi=eyJjaWQiOiIxNzU5MjM2ODA5MTE5ODI1ODExMjE2MjU0MDU2NjAwIiwiYmlkIjoiMTc1OTIzNjgwOTExOTgyNTgxMTIxNjI1NDA1NjYwMCIsInNpZCI6IjRjZTNkOTllNGI1MjQ2OWJhN2UzYjk1Yzk2YWJiNWM0In0=.1761582950625"
+            linkPagPagamento="https://go.hotmart.com/U102469342X?dp=1"
             srcImg="/images/curso-pedras-2-vital.webp"
             altImg="Curso de Artesanato com Pedras e Resina"
           />
@@ -171,7 +171,7 @@ const CursoPedrasResina = () => {
             />
           </div>
 
-          <BotaoPadrao hrefLink="https://pay.hotmart.com/U102469342X?off=frwzmpjz&hotfeature=51&_hi=eyJjaWQiOiIxNzU5MjM2ODA5MTE5ODI1ODExMjE2MjU0MDU2NjAwIiwiYmlkIjoiMTc1OTIzNjgwOTExOTgyNTgxMTIxNjI1NDA1NjYwMCIsInNpZCI6IjRjZTNkOTllNGI1MjQ2OWJhN2UzYjk1Yzk2YWJiNWM0In0=.1761582950625" />
+          <BotaoPadrao hrefLink="https://go.hotmart.com/U102469342X?dp=1" />
         </div>
 
         {/* Garantia e FAQ */}
