@@ -1,5 +1,6 @@
 import CarroselPersonalizado from "@/components/ui/carroselPersonalizado";
 import CardHome from "@/components/card-home";
+import TabelaPrecificacao from "@/components/tabelaPrecificacao";
 
 
 export default function Home() {
@@ -61,6 +62,7 @@ export default function Home() {
             />
           </div>
         </section>
+        <TabelaPrecificacao />
       </main>
     </>
   );
