@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Fragment } from "react";
 
 const sobreData = [
   {
@@ -49,9 +50,8 @@ const Sobre = () => {
       <h1 className="sr-only">Sobre Silvia Monteiro - Artesã e Professora</h1>
 
       {sobreData.map(({ id, srcImg, alt, ariaLabel, texto, reverse }) => (
-        <>
+        <Fragment key={id}>
           <section
-            key={id}
             className={
               reverse
                 ? "flex flex-col lg:flex-row-reverse gap-3 items-center justify-evenly"
@@ -78,7 +78,7 @@ const Sobre = () => {
           </section>
           <hr />
 
-        </>
+        </Fragment>
       ))}
     </article>
   );
