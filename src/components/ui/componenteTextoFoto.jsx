@@ -32,6 +32,7 @@ const TextoFoto = ({
           height={600}
           srcSet={`${srcImg} 400w, ${srcImg.replace(".webp", "@2x.webp")} 800w`}
           sizes="(max-width: 500px) 95vw, 800px"
+          loading="lazy"
         />
       </figure>
     </article>
