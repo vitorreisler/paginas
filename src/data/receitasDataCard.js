@@ -12,5 +12,11 @@ export const receitasDataCard = [
     tituloDaReceita: "Home Spray",
     tipo: "imagem",
   },
+  {
+    fotoCardReceita: "/images/difusor-varetas-receita.webp",
+    rotaDaReceita: "/rotas/receitas/difusorVaretas",
+    tituloDaReceita: "Difusor de varetas Artesanal",
+    tipo: "imagem",
+  },
 
 ];
