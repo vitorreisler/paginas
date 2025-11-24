@@ -39,3 +39,7 @@ font-size: 1.2em;
   content:"🍯";
   font-size: 1.2em;
 }
+.lista-receita-vela li::marker{
+  content:"🕯️";
+  font-size: 1.2em;
+}

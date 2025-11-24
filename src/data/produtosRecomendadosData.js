@@ -6,7 +6,7 @@ import { v4 as uuidv4 } from "uuid";
   - cosmeticos
   - velas
   - variados
-  - vidros
+  - embalagens
   */
 }
 
@@ -14,6 +14,33 @@ const shopeeLogo = "/images/shopee-logo.webp";
 const mercadoLivreLogo = "/images/mercado-livre-logo.webp";
 
 export const produtosRecomendadosData = [
+  {
+    id: uuidv4(),
+    href: "https://s.shopee.com.br/6KwsFpvO2w",
+    srcImg:
+      "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mfco71piw4cn5a.webp",
+    titulo: "Cartão Spray",
+    categoria: "cosmeticos",
+    plataforma: shopeeLogo,
+  },
+  {
+    id: uuidv4(),
+    href: "https://s.shopee.com.br/6fZieD06nn",
+    srcImg:
+      "https://down-br.img.susercontent.com/file/sg-11134201-821fp-mgsdn2bhr9xr41.webp",
+    titulo: "Vidro Jadore",
+    categoria: "embalagens",
+    plataforma: shopeeLogo,
+  },
+  {
+    id: uuidv4(),
+    href: "https://s.shopee.com.br/4AsNfzV8J6",
+    srcImg:
+      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdtiuytvaapl90.webp",
+    titulo: "Base V&G",
+    categoria: "cosmeticos",
+    plataforma: shopeeLogo,
+  },
   {
     id: uuidv4(),
     href: "https://s.shopee.com.br/2VjXrJov1o",
@@ -103,7 +130,7 @@ export const produtosRecomendadosData = [
     srcImg:
       "https://down-br.img.susercontent.com/file/br-11134201-7r98o-m79mvdcxfhkic2.webp",
     titulo: "Vidro Square 250ml Aromatizador de Ambiente",
-    categoria: "vidros",
+    categoria: "embalagens",
     plataforma: shopeeLogo,
   },
   {
@@ -152,7 +179,7 @@ export const produtosRecomendadosData = [
     srcImg:
       "https://http2.mlstatic.com/D_NQ_NP_2X_642315-MLB87167495180_072025-F-fco-vidro-transparente-cilindrico-240ml-rosca-28410-picolo.webp",
     titulo: " Vidro Transparente Cilíndrico 240ml Rosca 28/410",
-    categoria: "vidros",
+    categoria: "embalagens",
     plataforma: mercadoLivreLogo,
   },
 ];
