@@ -43,7 +43,7 @@ export const produtosRecomendadosData = [
   },
   {
     id: uuidv4(),
-    href: "https://s.shopee.com.br/2VjXrJov1o",
+    href: "https://s.shopee.com.br/5VO7r73TE7",
     srcImg:
       "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mfzk22gm7g913c.webp",
     titulo: "Álcool de Cereais",
