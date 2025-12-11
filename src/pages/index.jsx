@@ -45,7 +45,7 @@ export default function Home() {
               tipo={"video"}
             />
             <CardHome
-              srcImg={"/images/video-sabonete-safari.mp4"}
+              srcImg={"/images/video-sabonete-safari.mov"}
               titulo={"Sabonetes Temáticos"}
               descricao={
                 "Sabonetes Temáticos - Sabonetes artesanais com design exclusivo, perfeitos para lembrancinhas e presentes."

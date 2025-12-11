@@ -60,7 +60,7 @@ export const GaleriaVideosData = [
 
   {
     id: uuidv4(),
-    srcVideo: "video-sabonete-safari.mp4",
+    srcVideo: "video-sabonete-safari.mov",
     titulo: "video-safari",
     categoria: "sabonetes",
     tipo: "video",
