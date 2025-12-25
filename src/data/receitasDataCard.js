@@ -1,5 +1,11 @@
 export const receitasDataCard = [
   {
+    fotoCardReceita: "/images/receitas/agua-perfumada-thumb.webp",
+    rotaDaReceita: "/rotas/receitas/aguaPerfumada",
+    tituloDaReceita: "Água Perfumada para tecidos",
+    tipo: "imagem",
+  },
+  {
     fotoCardReceita: "/images/receitas/thumb-vela-coco.webp",
     rotaDaReceita: "/rotas/receitas/velaCeraCoco",
     tituloDaReceita: "Vela para envase - Cera de coco",
@@ -13,7 +19,7 @@ export const receitasDataCard = [
   },
   
   {
-    fotoCardReceita: "/images/thumb-homespray.webp",
+    fotoCardReceita: "/images/receitas/home-spray-thumb.webp",
     rotaDaReceita: "/rotas/receitas/homespray",
     tituloDaReceita: "Home Spray",
     tipo: "imagem",
