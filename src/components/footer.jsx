@@ -1,11 +1,12 @@
 import Link from "next/link";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <footer>
       <div className="w-full mx-auto p-4 md:flex md:items-center md:justify-between">
         <span className="text-sm text-gray-100 sm:text-center">
-          © 2025{" "}
+          © {currentYear}{" "}
           <a
             target="_blank"
             rel="noopener noreferrer"
