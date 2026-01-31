@@ -16,6 +16,15 @@ const mercadoLivreLogo = "/images/mercado-livre-logo.webp";
 export const produtosRecomendadosData = [
   {
     id: uuidv4(),
+    href: "https://s.shopee.com.br/8AQAPeLCiM",
+    srcImg:
+      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9i4p2g5imgpcd.webp",
+    titulo: " Óleo de Melaleuca",
+    categoria: "cosmeticos",
+    plataforma: shopeeLogo,
+  },
+  {
+    id: uuidv4(),
     href: "https://s.shopee.com.br/6KwsFpvO2w",
     srcImg:
       "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mfco71piw4cn5a.webp",
@@ -43,12 +52,12 @@ export const produtosRecomendadosData = [
   },
   {
     id: uuidv4(),
-    href: "https://s.shopee.com.br/LgKfmMWUL",
+    href: "https://mercadolivre.com/sec/2BZusgH",
     srcImg:
       "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mfzk22gm7g913c.webp",
     titulo: "Álcool de Cereais",
     categoria: "cosmeticos",
-    plataforma: shopeeLogo,
+    plataforma: mercadoLivreLogo,
   },
   {
     id: uuidv4(),

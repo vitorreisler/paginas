@@ -1,5 +1,17 @@
 export const youtubeData = [
   {
+    id: "jZ2TqdsfaUMFEQVM",
+    srcVideo: "https://www.youtube.com/embed/nE-C0Kn4IAY?si=jZ2TqdsfaUMFEQVM",
+  },
+  {
+    id: "evzFqYCaYp1Mz1Gd",
+    srcVideo: "https://www.youtube.com/embed/CDBkzdgmoaM?si=evzFqYCaYp1Mz1Gd",
+  },
+  {
+    id: "8f9xmhPywvAhlXmk",
+    srcVideo: "https://www.youtube.com/embed/DldyRvqhXMI?si=8f9xmhPywvAhlXmk",
+  },
+  {
     id: "1fgsaDGAVb9FsNnR",
     srcVideo: "https://www.youtube.com/embed/NLx85d6S9bE?si=1fgsaDGAVb9FsNnR",
   },
@@ -32,3 +44,14 @@ export const youtubeData = [
     srcVideo: "https://www.youtube.com/embed/RikFPHGOu00?si=PzVJwlpBjzpPnMmO",
   },
 ];
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/nE-C0Kn4IAY?si=jZ2TqdsfaUMFEQVM"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen
+></iframe>;
