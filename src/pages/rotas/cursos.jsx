@@ -3,7 +3,7 @@ import CardCurso from "@/components/card-curso";
 import { cursosData } from "@/data/cursosData";
 
 const Cursos = () => {
-  const manutencao = false; // Mude para true para ativar a página de manutenção
+  const manutencao = true; // Mude para true para ativar a página de manutenção
 
   if(manutencao){
     return (
