@@ -42,6 +42,9 @@ const CarroselPersonalizado = () => {
                     loading={item.id === 1 ? "eager" : "lazy"}
                     fetchPriority={item.id === 1 ? "high" : "auto"}
                     sizes="100vw"
+                    quality={70}
+                    placeholder="blur"
+                    blurDataURL="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2010%205'%3E%3Crect%20width='10'%20height='5'%20fill='%23e3d7bf'/%3E%3C/svg%3E"
                   />
                 </div>
 

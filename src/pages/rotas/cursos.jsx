@@ -3,6 +3,20 @@ import CardCurso from "@/components/card-curso";
 import { cursosData } from "@/data/cursosData";
 
 const Cursos = () => {
+  const manutencao = false; // Mude para true para ativar a página de manutenção
+
+  if(manutencao){
+    return (
+      <div className="flex flex-col items-center justify-center min-h-screen bg-[#e3d7bf]">
+        <h1 className="text-4xl md:text-6xl font-bold mb-4 text-center story-script-regular">
+          Página em Manutenção
+        </h1>
+        <p className="text-lg text-gray-700 text-center dm-serif-text-regular">
+          Estamos trabalhando para melhorar sua experiência. Volte em breve!
+        </p>
+      </div>
+    );
+  }
   return (
     <>
       <Head>

@@ -9,4 +9,15 @@ export const cursosData = [
     hashtag2: "#Gruta",
     hashtag3: "#Bônus",
   },
+  {
+    rotaProCurso: "cursoPinturaSabonete",
+    srcImg: "/images/capaFrutas.webp",
+    tituloCurso: "Curso Saboaria-Pintura de Frutas",
+    descricaoCurso:
+      "Aprenda a fazer sabonetes incríveis com pintura realista em casa.",
+    hashtag1: "#Saboaria",
+    hashtag2: "#PinturaRealista",
+    hashtag3: "#Bônus",
+  },
+
 ];

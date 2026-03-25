@@ -4,6 +4,7 @@ import TabelaPrecificacao from "@/components/tabelaPrecificacao";
 
 
 export default function Home() {
+  
 
   return (
     <>

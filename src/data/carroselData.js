@@ -6,6 +6,12 @@ export const carroselData = [
     textoDentro: "Velas com pedras e resina",
     redirecionaPara:"/rotas/cursos/cursoPedrasResina",
   },
+  {
+    id: "2",
+    srcImg: "/images/capaFrutas.webp",
+    textoDentro: "Curso de Saboaria - Pintura de Frutas",
+    redirecionaPara:"/rotas/cursos/cursoPinturaSabonete",
+  },
  
 
 ];

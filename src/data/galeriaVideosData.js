@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
 //Categorias                  | CURSO
 // - velas-resina,            | - curso-pedras-resina
-// - velas-desenformadas,     | - 
+// - velas-desenformadas,     | - curso-sabonete-pintura-frutas
 // - velas-no-copo Sabonetes, |
 // - sabonetes-barra          |
 // - sabonetes-liquido        |
@@ -73,5 +73,37 @@ export const GaleriaVideosData = [
     categoria: "velas-desenformadas",
     tipo: "video",
     curso: "",
+  },
+  {
+    id: uuidv4(),
+    srcVideo: "pessegoVideo.mov",
+    titulo: "pintura-pessego",
+    categoria: "curso-sabonete-pintura-frutas",
+    tipo: "video",
+    curso: "curso-sabonete-pintura-frutas",
+  },
+  {
+    id: uuidv4(),
+    srcVideo: "mexerica-video.mov",
+    titulo: "pintura-mexerica",
+    categoria: "curso-sabonete-pintura-frutas",
+    tipo: "video",
+    curso: "curso-sabonete-pintura-frutas",
+  },
+  {
+    id: uuidv4(),
+    srcVideo: "goiaba-video.mov",
+    titulo: "pintura-goiaba",
+    categoria: "curso-sabonete-pintura-frutas",
+    tipo: "video",
+    curso: "curso-sabonete-pintura-frutas",
+  },
+  {
+    id: uuidv4(),
+    srcVideo: "melancia-video.mov",
+    titulo: "pintura-melancia",
+    categoria: "curso-sabonete-pintura-frutas",
+    tipo: "video",
+    curso: "curso-sabonete-pintura-frutas",
   },
 ];

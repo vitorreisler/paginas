@@ -6,7 +6,6 @@ import ComponenteTextoFoto from "@/components/ui/componenteTextoFoto";
 import GarantiaIncont from "@/components/ui/garantiaIncont";
 import PerguntasFAQSection from "@/components/perguntasFAQ";
 import ReviewSection from "@/components/reviewSection";
-import { reviewData } from "@/data/reviewData";
 import GaleriaVideosFotos from "@/components/ui/galeriaVideosFotos";
 
 const CursoPedrasResina = () => {
@@ -28,7 +27,7 @@ const CursoPedrasResina = () => {
         />
         <meta
           property="og:image"
-          content="https://cursossilvia.vercel.app/images/cursoPedrasCover.png"
+          content="https://cursossilvia.vercel.app/images/curso-pedras-2-vital.webp"
         />
         <link
           rel="canonical"
@@ -47,6 +46,10 @@ const CursoPedrasResina = () => {
             altImg="Curso de Artesanato com Pedras e Resina"
           />
         </div>
+         <GaleriaVideosFotos
+          categoriaParaMostrar={"velas-resina"}
+          cursoParaMostrar={"curso-pedras-resina"}
+        />
         {/* Seção de apresentação */}
         <div>
           <h2 className="text-4xl text-center p-3 md:text-6xl story-script-regular bg-[#e5e3d8]">
@@ -116,24 +119,12 @@ const CursoPedrasResina = () => {
         </div>
 
         {/* Depoimentos */}
-        {reviewData && reviewData.length > 0 && (
-          <div>
-            <h2 className="text-4xl text-center p-3 md:text-6xl story-script-regular bg-[#e5e3d8]">
-              Depoimentos das Alunas
-            </h2>
-            <div className="flex flex-wrap gap-3 items-center justify-center mx-auto my-4">
-              <ReviewSection />
-            </div>
-          </div>
-        )}
+        <ReviewSection curso="cursoPedrasResina" />
 
         {/* Aproveite em qualquer dispositivo */}
         <AproveiteEmDisp />
 
-        <GaleriaVideosFotos
-          categoriaParaMostrar={"velas-resina"}
-          cursoParaMostrar={"curso-pedras-resina"}
-        />
+       
 
         {/* Seção de Preço e Compra */}
         <div className="w-full flex flex-col justify-center items-center px-1 py-3 my-8 bg-[#e5e3d8] drop-shadow-2xl rounded-2xl">

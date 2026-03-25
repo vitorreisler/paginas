@@ -40,12 +40,12 @@ export default function Document() {
         */}
         <meta
           name="description"
-          content="Cursos de artesanato, velas artesanais e peças exclusivas em resina. Aprenda técnicas profissionais de artesanato com Silvia Monteiro. Aulas online, kits completos e suporte personalizado."
+          content="Cursos de cosméticos artesanais, saboaria, velas artesanais e peças exclusivas em resina. Aprenda técnicas profissionais de artesanato com Silvia Monteiro. Aulas online, kits completos e suporte personalizado."
         />
         <meta name="author" content="Silvia Monteiro" />
         <meta
           name="keywords"
-          content="artesanato, velas artesanais, curso de artesanato, resina epóxi, peças decorativas, arte em resina"
+          content="artesanato, cursos de cosméticos artesanais, saboaria velas artesanais, curso de artesanato, resina epóxi, peças decorativas, arte em resina, curso saboaria,curso velas"
         />
 
         {/* Open Graph / Facebook */}
@@ -56,7 +56,7 @@ export default function Document() {
         />
         <meta
           property="og:description"
-          content="Cursos de artesanato, velas artesanais e peças exclusivas em resina. Aprenda técnicas profissionais com Silvia Monteiro."
+          content="Cursos de cosméticos artesanais, saboaria, velas artesanais e peças exclusivas em resina. Aprenda técnicas profissionais com Silvia Monteiro."
         />
         <meta
           property="og:image"
@@ -73,7 +73,7 @@ export default function Document() {
         />
         <meta
           name="twitter:description"
-          content="Cursos de artesanato, velas artesanais e peças exclusivas em resina. Aprenda técnicas profissionais com Silvia Monteiro."
+          content="Cursos de cosméticos artesanais, saboaria, velas artesanais e peças exclusivas em resina. Aprenda técnicas profissionais com Silvia Monteiro."
         />
         <meta
           name="twitter:image"

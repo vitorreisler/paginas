@@ -13,9 +13,9 @@ export const dataFAQ = [
   },
   {
     id: 3,
-    titulo: "O que é e como funciona o Certificado de Conclusão digital?",
+    titulo: "O curso tem Certificado de Conclusão digital?",
     resposta:
-      "Alguns cursos online oferecem um certificado digital de conclusão. Alunos podem emitir esse certificado ao final do curso ou entrando em contato com o Autor ou Autora. Esses certificados podem ser compartilhados em redes sociais como o LinkedIn e inseridos em informações curriculares. ",
+      "Sim, nossos cursos possuem Certificado de Conclusão digital, que pode ser baixado e compartilhado em redes sociais ou adicionado ao seu currículo. O certificado é emitido automaticamente após a conclusão do curso e atesta que você adquiriu as habilidades e conhecimentos ensinados no curso.",
   },
   {
     id: 4,
