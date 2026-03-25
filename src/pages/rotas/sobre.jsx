@@ -65,8 +65,8 @@ const Sobre = () => {
                 alt={alt}
                 fill
                 className="object-cover"
-                priority={id === 1}
                 sizes="(max-width: 600px) 95vw, 600px"
+                loading="lazy"
               />
             </figure>
 
