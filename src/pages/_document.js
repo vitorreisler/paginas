@@ -52,7 +52,7 @@ export default function Document() {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="By Silvia Monteiro — Artesanato, Velas e Cursos Artesanais"
+          content="By Silvia Monteiro — Cursos de Saboaria, Velas e Cosméticos Artesanais"
         />
         <meta
           property="og:description"
