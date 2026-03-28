@@ -16,14 +16,6 @@ export const GaleriaVideosData = [
     tipo: "video",
     curso: "",
   },
-  {
-    id: uuidv4(),
-    srcVideo: "vídeo-vela-gruta-site.mov",
-    titulo: "video-vela-gruta",
-    categoria: "velas-resina",
-    tipo: "video",
-    curso: "curso-pedras-resina",
-  },
 
   {
     id: uuidv4(),
@@ -31,7 +23,7 @@ export const GaleriaVideosData = [
     titulo: "vela gruta especial de natal com bolas natalinas",
     categoria: "velas-resina",
     tipo: "imagem",
-    curso: "",
+    curso: "curso-pedras-resina",
   },
   {
     id: uuidv4(),
@@ -56,23 +48,6 @@ export const GaleriaVideosData = [
     categoria: "velas-resina",
     tipo: "imagem",
     curso: "curso-pedras-resina",
-  },
-
-  {
-    id: uuidv4(),
-    srcVideo: "video-sabonete-safari.mov",
-    titulo: "video-safari",
-    categoria: "sabonetes",
-    tipo: "video",
-    curso: "",
-  },
-  {
-    id: uuidv4(),
-    srcVideo: "video-vela-desmoldada.mov",
-    titulo: "video-vela-desmoldada",
-    categoria: "velas-desenformadas",
-    tipo: "video",
-    curso: "",
   },
   {
     id: uuidv4(),

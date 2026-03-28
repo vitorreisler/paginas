@@ -1,5 +1,13 @@
 export const youtubeData = [
   {
+    id: "6LXLEllhLnI",
+    srcVideo: "https://www.youtube.com/embed/6LXLEllhLnI?si=mucT-Es2YbtwFr3E",
+  },
+  {
+    id: "qeu-LmtmNXA",
+    srcVideo: "https://www.youtube.com/embed/qeu-LmtmNXA?si=h_PUYfVjNa7_C_hu",
+  },
+  {
     id: "jZ2TqdsfaUMFEQVM",
     srcVideo: "https://www.youtube.com/embed/nE-C0Kn4IAY?si=jZ2TqdsfaUMFEQVM",
   },
@@ -48,7 +56,7 @@ export const youtubeData = [
 <iframe
   width="560"
   height="315"
-  src="https://www.youtube.com/embed/nE-C0Kn4IAY?si=jZ2TqdsfaUMFEQVM"
+  src="https://www.youtube.com/embed/qeu-LmtmNXA?si=h_PUYfVjNa7_C_hu"
   title="YouTube video player"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

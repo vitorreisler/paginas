@@ -36,31 +36,29 @@ export default function Home() {
             decorativas, peças em resina e itens personalizados.
           </p>
 
-          <div className="grid place-items-center md:grid-cols-3 gap-5 md:gap-3 py-10 bg-[#e3d7bf] drop-shadow-lg rounded-xl">
-            <CardHome
-              srcImg={"/images/video-vela-gruta.mov"}
-              titulo={"Vela Gruta Nossa Senhora"}
+          <div className="grid place-items-center md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-3 py-10 bg-[#e3d7bf] drop-shadow-lg rounded-xl">
+           <CardHome
+              srcImg={"/images/frutas2.webp"}
+              titulo={"Cursos Online"}
               descricao={
-                "Vela Gruta Nossa Senhora - Peça artesanal em resina com detalhes realistas e acabamento impecável."
+                "Aprenda técnicas artesanais com nossos cursos completos."
               }
-              tipo={"video"}
             />
             <CardHome
-              srcImg={"/images/video-sabonete-safari.mov"}
+              srcImg={"/images/vela-titanic.webp"}
+              titulo={"Velas desmoldadas e envasadas"}
+              descricao={
+                "Técnicas para soltar a sua imaginação e criar velas únicas."
+              }
+            />
+            <CardHome
+              srcImg={"/images/frutas4.webp"}
               titulo={"Sabonetes Temáticos"}
               descricao={
-                "Sabonetes Temáticos - Sabonetes artesanais com design exclusivo, perfeitos para lembrancinhas e presentes."
+                "Sabonetes artesanais com design exclusivo, perfeitos para lembrancinhas e presentes."
               }
-              tipo={"video"}
             />
-            <CardHome
-              srcImg={"/images/video-vela-desmoldada.mov"}
-              titulo={"Vela Desmoldada"}
-              descricao={
-                "Vela Desmoldada - Vela artesanal com design exclusivo, feita à mão com cera de alta qualidade."
-              }
-              tipo={"video"}
-            />
+            
           </div>
         </section>
         <TabelaPrecificacao />
