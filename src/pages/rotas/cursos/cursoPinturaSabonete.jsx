@@ -41,7 +41,7 @@ const CursoPinturaSabonete = () => {
           <ComponenteTextoFoto
             nomeCurso="Curso Saboaria - Pintura de Frutas — Domine a Arte de Criar Peças Únicas e Lucrativas"
             breveDescricao="Transforme suas ideias em peças que encantam e alcance o sucesso no mundo do artesanato com a saboaria."
-            linkPagPagamento="https://go.hotmart.com/U102469342X?dp=1" //MUDAR MUDAR MUDAR MUDAR
+            linkPagPagamento="https://go.hotmart.com/I104872786V"
             srcImg="/images/capa-pintura-frutas.webp"
             altImg="Curso Saboaria - pintura de frutas — By Silvia Monteiro"
           />
@@ -156,7 +156,7 @@ const CursoPinturaSabonete = () => {
             />
           </div>
 
-          <BotaoPadrao hrefLink="https://go.hotmart.com/U102469342X?dp=1" /> {/* MUDAR MUDAR MUDAR MUDAR*/}
+          <BotaoPadrao hrefLink="https://go.hotmart.com/I104872786V" />
         </div>
 
         {/* Garantia e FAQ */}

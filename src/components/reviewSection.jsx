@@ -22,7 +22,6 @@ const ReviewSection = ({ curso }) => {
             review={item.review}
             srcImg={item.srcImg}
             name={item.name}
-            datee={item.datee}
           />
         ))}
       </div>

@@ -21,9 +21,6 @@ const ReviewCard = ({ review, srcImg, name, datee }) => {
           <p className="text-gray-900 font-semibold" itemProp="author">
             {name}
           </p>
-          <p className="text-gray-500 text-sm" itemProp="datePublished">
-            {datee}
-          </p>
         </div>
       </div>
       <p className="text-gray-700 text-start italic" itemProp="reviewBody">
