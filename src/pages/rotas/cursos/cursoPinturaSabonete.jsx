@@ -7,11 +7,33 @@ import GarantiaIncont from "@/components/ui/garantiaIncont";
 import PerguntasFAQSection from "@/components/perguntasFAQ";
 import ReviewSection from "@/components/reviewSection";
 import GaleriaVideosFotos from "@/components/ui/galeriaVideosFotos";
+import Script from "next/script";
 
 const CursoPinturaSabonete = () => {
   return (
     <>
       <Head>
+{/*<!-- Google tag (gtag.js) -->*/}
+<Script
+  src="https://www.googletagmanager.com/gtag/js?id=G-GGTE2Y6HCR"
+  strategy="afterInteractive"
+/>
+
+<Script
+  id="google-analytics"
+  strategy="afterInteractive"
+  dangerouslySetInnerHTML={{
+    __html: `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GGTE2Y6HCR', {
+        page_path: window.location.pathname,
+      });
+    `,
+  }}
+/>
+
         <title>Curso de Pintura de Frutas — By Silvia Monteiro</title>
         <meta
           name="description"
@@ -34,6 +56,7 @@ const CursoPinturaSabonete = () => {
           href="https://cursossilvia.vercel.app/rotas/cursos/cursoPinturaSabonete"
         />
       </Head>
+
 
       <div className="flex flex-col my-3">
         {/* Seção de foto e compra */}
